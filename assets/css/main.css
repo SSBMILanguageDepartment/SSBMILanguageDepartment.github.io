@@ -1659,8 +1659,8 @@ input, select, textarea {
 		text-align: center;
 		color: #A6A88F;
 		border-top: solid 1px #ced0b7;
-		padding: 3em 0 0 0;
-		margin: 3em 0 0 0;
+		padding: 2em 0 2em 0;
+		margin: 0em 0 -1em 0;
 	}
 
 		#copyright a {
@@ -1719,7 +1719,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer-wrapper {
-				padding: 4em 0;
+				padding: 3em 0;
 			}
 
 		/* Copyright */
