@@ -2036,3 +2036,54 @@ input, select, textarea {
 				}
 
 	}
+
+##############################################################################################################
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+	font-family: inherit;
+
+	position: absolute;
+	right: 40px;
+	top: 0px;
+	line-height: 84px;
+	font-size: 1.3em;
+	letter-spacing: 0px;
+
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	right: 40px;
+	top: 86px;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	font-family: 'Andika', sans-serif;
+	color: #878e83;
+	letter-spacing: -0px;	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
