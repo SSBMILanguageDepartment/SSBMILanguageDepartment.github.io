@@ -1808,8 +1808,9 @@ input, select, textarea {
 				width: 100%;
 				z-index: 10001;
 				text-align: center;
+				padding-left: 20px;
 				color: #fff;
-				font-size: 1.25em;
+				font-size: 1.1em;
 				background-color: #007294;
 			}
 
