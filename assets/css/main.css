@@ -90,7 +90,7 @@ input, select, textarea {
 		font-family: sans-serif;
 		background-color: #e3e9dc;
 		font-family: 'Andika', sans-serif;
-		color: #878e83;
+		color: #51574f;
 		letter-spacing: -0px;
 	}
 
@@ -131,7 +131,8 @@ input, select, textarea {
 	}
 
 	strong {
-		color: #474e43;
+		color: #000000;
+		font-weight: 600;
 	}
 
 	img.left {
