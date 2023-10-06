@@ -1647,6 +1647,13 @@ input, select, textarea {
 		padding: 4em 0;
 	}
 
+/* Quaternary */
+
+	#quaternary {
+		background: #e8e8e8;
+		padding: 4em 0;
+	}
+
 /* Footer */
 
 	#footer-wrapper {
@@ -2014,6 +2021,12 @@ input, select, textarea {
 		/* Tertiary */
 
 			#tertiary {
+				padding: 40px 0;
+			}
+
+		/* Quaternary */
+
+			#quaternary {
 				padding: 40px 0;
 			}
 
