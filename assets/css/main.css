@@ -2109,6 +2109,16 @@ input, select, textarea {
 
 
 
+.privateimage{
+   pointer-events: none;
+}
+
+
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
