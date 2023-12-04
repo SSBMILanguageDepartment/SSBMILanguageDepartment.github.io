@@ -2131,6 +2131,7 @@ input, select, textarea {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  padding-bottom: 10px;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -2199,6 +2200,7 @@ input, select, textarea {
 /* Add a transparency effect for thumbnail images */
 .demo {
   opacity: 0.6;
+  padding-top: 10px;
 }
 
 .active,
