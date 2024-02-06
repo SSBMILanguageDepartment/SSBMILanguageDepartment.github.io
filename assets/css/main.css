@@ -131,7 +131,7 @@ input, select, textarea {
 		margin-bottom: 1.25em;
 	}
 
-	p {
+	p, ul {
 		line-height: 1.8em;
 	}
 
