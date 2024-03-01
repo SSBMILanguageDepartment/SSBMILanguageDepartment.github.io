@@ -2159,6 +2159,7 @@ input, select, textarea {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  text-decoration: none;
 }
 
 /* Position the "next button" to the right */
@@ -2199,7 +2200,7 @@ input, select, textarea {
 /* Six columns side by side */
 .column {
   float: left;
-  width: 9%;
+  width: 10%;
 }
 
 /* Add a transparency effect for thumbnail images */
