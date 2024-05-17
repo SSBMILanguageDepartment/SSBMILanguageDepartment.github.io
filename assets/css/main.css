@@ -1670,6 +1670,13 @@ input, select, textarea {
 		padding: 4em 0;
 	}
 
+/* Quinary */
+
+	#quinary {
+		background: #dedede;
+		padding: 4em 0;
+	}
+
 /* Footer */
 
 	#footer-wrapper {
@@ -2046,6 +2053,13 @@ input, select, textarea {
 				padding: 40px 0;
 			}
 
+		/* Quinary */
+
+			#quinary {
+				padding: 40px 0;
+			}
+
+		
 		/* Footer */
 
 			#footer-wrapper {
