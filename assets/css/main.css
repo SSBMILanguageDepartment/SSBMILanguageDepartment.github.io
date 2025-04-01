@@ -2254,18 +2254,3 @@ input, select, textarea {
     width:80%;
     height:80%;
 }
-
-.mcphoto-container {
-    position:relative;
-    padding-bottom:100%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-}
-
-.mcphoto-container iframe, .mcphoto-container object, .mcphoto-container embed {
-    position:absolute;
-    top:0;
-    left:20%;
-    width:60%;
-}
