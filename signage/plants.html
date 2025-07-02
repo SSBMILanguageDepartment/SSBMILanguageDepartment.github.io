@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SSBMI Language Department - Shingle Springs Rancheria plant signage</title>
+		<link rel="icon" href="../images/ssbmitriangles.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="https://ssbmilanguagedepartment.github.io/index.html" id="logo">SSBMI Language Department</a></h1>
+									<div class="dropdown">
+										<button class="dropbtn">Navigation &#9662;</button>
+										<div class="dropdown-content">
+											<a href="https://ssbmilanguagedepartment.github.io/index.html">Homepage</a>
+											<a href="https://ssbmilanguagedepartment.github.io/activities.html">Activities</a>
+											<a href="https://ssbmilanguagedepartment.github.io/beeteyihi.html">Beeteyihí (Storytime)</a>
+											<a href="https://ssbmilanguagedepartment.github.io/educationcenter.html">Education Center Staff Class</a>
+											<a href="https://ssbmilanguagedepartment.github.io/familysongs.html">Family Songs</a>
+											<a href="https://ssbmilanguagedepartment.github.io/flashcards.html">Flashcards</a>
+											<a href="https://ssbmilanguagedepartment.github.io/games.html">Games</a>
+											<a href="https://ssbmilanguagedepartment.github.io/greetings.html">Greetings</a>
+											<a href="https://ssbmilanguagedepartment.github.io/languagedaycamp.html">Language Day Camp</a>
+											<a href="https://ssbmilanguagedepartment.github.io/misc.html">Miscellany</a>
+											<a href="https://ssbmilanguagedepartment.github.io/nisenanstorytellingcollection.html">SSBMI Nisenan Storytelling Collection</a>
+										</div>
+									</div>
+									<nav id="nav">
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/index.html">Homepage</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/activities.html">Activities</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/beeteyihi.html">Beeteyihí (Storytime)</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/educationcenter.html">Education Center Staff Class</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/familysongs.html">Family Songs</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/flashcards.html">Flashcards</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/games.html">Games</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/greetings.html">Greetings</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/languagedaycamp.html">Language Day Camp</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/misc.html">Miscellany</a>
+										<a style="display:none" href="https://ssbmilanguagedepartment.github.io/nisenanstorytellingcollection.html">SSBMI Nisenan Storytelling Collection</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2 style="font-size:2em;">Shingle Springs Rancheria plant signage</h2>
+
+									<p><strong>This webpage is under development......</strong></p>
+
+
+									<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Nisenan, English, or Latin name...">
+
+									<table id="myTable">
+										<tr class="header">
+											<th style="width:20%;" onclick="sortTable(0)"><strong>Nisenan</strong></th>
+											<th style="width:40%;" onclick="sortTable(1)"><strong>English</strong></th>
+											<th style="width:40%;" onclick="sortTable(2)"><strong>Latin</strong></th>
+										</tr>
+										<tr>
+											<td>Hoo</td>
+											<td>Soaproot</td>
+											<td>Chlorogalum pomeridianum</td>
+										</tr>
+										<tr>
+											<td>K’ak’</td>
+											<td><a href="./plants/elderberry.html">Elderberry</a></td>
+											<td>Sambucus nigra</td>
+										</tr>
+										<tr>
+											<td>K’otó</td>
+											<td>Manzanita</td>
+											<td>Arctostaphylos manzanita</td>
+										</tr>
+										<tr>
+											<td>Mank’á</td>
+											<td><a href="./plants/wildstrawberry.html">Wild Strawberry</a></td>
+											<td>Fragaria spp.</td>
+										</tr>
+										<tr>
+											<td>Pɨk</td>
+											<td><a href="./plants/californiapoppy.html">California Poppy</a></td>
+											<td>Eschscholzia californica</td>
+										</tr>
+									</table>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td1, td2, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 1; i < tr.length; i++) {
+    if (tr[i].textContent.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }      
+  }
+}
+</script>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2025-07-02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								Pebaahá daak’ábe mi? (Do you want to ask a question?) Please contact the SSBMI Language Department at: <a href="mailto: Language@ssband.org">Language@ssband.org</a>
+							</div>
+							<div class="col-12">
+
+								&copy; SSBMI Language Department. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
