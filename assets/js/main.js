@@ -92,4 +92,23 @@ function showSlides(n) {
 function showhide(id) {
        	var e = document.getElementById(id);
        	e.style.display = (e.style.display == 'block') ? 'none' : 'block';
-     }
+}
+
+
+
+
+// FUNCTION FOR OPENTING POPUP TEXT
+
+// When the user clicks on <div>, open the popup
+function popupFunction(event) {
+	event.target.children[0].classList.toggle("show");
+}
+
+
+
+// FUNCTION FOR COPYING TEXT TO CLIPBOARD
+
+function copy_to_clipboard( elm_id ) {
+  var text = document.getElementById( elm_id ).innerHTML;
+  navigator.clipboard.writeText( text );
+}
