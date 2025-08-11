@@ -10,7 +10,7 @@
 		<link rel="icon" href="../../images/ssbmitriangles.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../assets/css/main.css" />n
+		<link rel="stylesheet" href="../../assets/css/main.css" />
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -68,115 +68,67 @@
 								<section>
 									<h2 style="font-size:2em;">Nisenan Flashcards: Hatíp! Simple Commands</h2>
 
-									<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+									<p style="font-size:1.5em;"><strong>This page is under development. Check back soon for updates.</strong></p>
 
 
-									<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Nisenan, English, or Latin name..." style="margin-top:2em;">
+									<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Nisenan phrase or English translation..." style="margin-top:2em;">
 
 									<table id="myTable">
 										<tr class="header">
-											<th style="text-align:center; width:5%;"><strong>#</strong></th>
-											<th style="text-align:center; width:5%;"> </th>
-											<th style="text-align:center; width:30%;"><strong>Nisenan</strong></th>
-											<th style="text-align:center; width:30%;"><strong>English</strong></th>
-											<th style="text-align:center; width:30%;"><strong> </strong></th>
+											<th style="width:5%;" onclick="sortTable(0)"><strong>#</strong></th>
+											<th style="width:30%;" onclick="sortTable(1)"><strong>Nisenan</strong></th>
+											<th style="width:30%;" onclick="sortTable(2)"><strong>English</strong></th>
+											<th style="width:35%;"><strong> </strong></th>
 										</tr>
 										<tr>
-											<td style="text-align:center; vertical-align:middle;">01a</td>
-											<td> </td>
-											<td style="text-align:center; vertical-align:middle;">Hatíp!</td>
-											<td style="text-align:center; vertical-align:middle;">Stop it!<p style="font-size:0.8em;">(said to 1 person)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
+											<td style="vertical-align:middle;">01a</td>
+											<td style="vertical-align:middle;">Hatíp!</td>
+											<td style="vertical-align:middle;">Stop it!<p style="font-size:0.8em;">(said to 1 person)</p></td>
+											<td style="vertical-align:middle;">
 											<audio controls>
 												<source src="sounds/N - Stop it (sg) - Combo.wav" type="audio/wav">
 											</audio></td>
 										</tr>
+
+
 										<tr>
-											<td style="text-align:center; vertical-align:middle;">01b</td>
-											<td> </td>
-											<td style="text-align:center; vertical-align:middle;">Hatiwá!</td>
-											<td style="text-align:center; vertical-align:middle;">Stop it!<p style="font-size:0.8em;">(said to 2+ people)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
+											<td style="vertical-align:middle;">01b</td>
+											<td style="vertical-align:middle;">Hatiwá!</td>
+											<td style="vertical-align:middle;">Stop it!<p style="font-size:0.8em;">(said to 2+ people)</p></td>
+											<td style="vertical-align:middle;">
 											<audio controls>
 												<source src="sounds/N - Stop it (pl) - Combo.wav" type="audio/wav">
 											</audio></td>
 										</tr>
+
+
 										<tr>
-											<td style="text-align:center; vertical-align:middle;">02a</td>
-											<td> </td>
-											<td style="text-align:center; vertical-align:middle;">Wallíp!</td>
-											<td style="text-align:center; vertical-align:middle;">Be careful!<p style="font-size:0.8em;">(said to 1 person)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
-											<audio controls>
-												<source src="sounds/N - Be careful (sg) - Combo.wav" type="audio/wav">
-											</audio></td>
-										</tr>
-
-										<tr style="border-bottom: none;">
-											<td style="text-align:center; vertical-align:middle;">02b</td>
-											<td> </td>
-											<td style="text-align:center; vertical-align:middle;">Walliwá!</td>
-											<td style="text-align:center; vertical-align:middle;">Be careful!<p style="font-size:0.8em;">(said to 2+ people)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
-											<audio controls>
-												<source src="sounds/N - Be careful (pl) - Combo.wav" type="audio/wav">
-											</audio></td>
-										</tr>
-										<tr><td></td><td colspan="4" style="display: none;">02b Walliwá! Be careful! (said to 1 person)</td></tr>
-
-
-
-
-
-										<tr style="border-bottom: none;">
-											<td style="text-align:center; vertical-align:middle;">11a</td>
-											<td style="text-align:center; vertical-align:middle;"><a href="javascript:showhide('11a_note')"><img src="resources/moreinfo_icon.png" style="width:100%; max-width:200px;"></a>
-											<td style="text-align:center; vertical-align:middle;">Henamén!</td>
-											<td style="text-align:center; vertical-align:middle;">Don't yell!<p style="font-size:0.8em;">(said to 1 person)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
+											<td style="vertical-align:middle;">11a</td>
+											<td style="vertical-align:middle;"><span id="11a">Henamén!</span>
+												<button onclick="copy_to_clipboard('11a')">copy</button>
+												<div class="popup" onclick="popupFunction(event)" style="color:#0f52b9; font-weight:600;">&#9432;
+													<span class="popuptext" id="11a_popup"><strong>Note:</strong> The verb <strong>hena-</strong> means 'to yell'. When you add <strong>-men</strong> to the end, it means 'to not yell'.</span>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">Don't yell!<p style="font-size:0.8em;">(said to 1 person)</p></td>
+											<td style="vertical-align:middle;">
 											<audio controls>
 												<source src="sounds/N - Don't yell (sg) - Combo.wav" type="audio/wav">
 											</audio></td>
 										</tr>
 
-										
-										<tr>
-											<td></td>
-											<td colspan="4"><div id="11a_note" style="display: none;"><span style="display: none;">11a Henamén Don't yell! (said to 1 person)</span><strong>Note:</strong> The verb <strong>hena-</strong> means 'to yell'. When you add <strong>-men</strong> to the end, it means 'to not yell'.</div></td>
-										</tr>
-
-
-
-
 
 										<tr>
-											<td style="text-align:center; vertical-align:middle;">11b</td>
-											<td> </td>
-											<td style="text-align:center; vertical-align:middle;">Henamenwá!</td>
-											<td style="text-align:center; vertical-align:middle;">Don't yell!<p style="font-size:0.8em;">(said to 2+ people)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
+											<td style="vertical-align:middle;">11b</td>
+											<td style="vertical-align:middle;">Henamenwá!
+												<div class="popup" onclick="popupFunction(event)" style="color:#0f52b9; font-weight:600;">&#9432;</span>
+													<span class="popuptext" id="11b_popup"><strong>Note:</strong> The verb <strong>hena-</strong> means 'to yell'. When you add <strong>-men</strong> to the end, it means 'to not yell'.</span>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">Don't yell!<p style="font-size:0.8em;">(said to 2+ people)</p></td>
+											<td style="vertical-align:middle;">
 											<audio controls>
 												<source src="sounds/N - Don't yell (pl) - Combo.wav" type="audio/wav">
-											</audio></td>
-										</tr>
-										<tr>
-											<td style="text-align:center; vertical-align:middle;">14a</td>
-											<td> </td>
-											<td style="text-align:center; vertical-align:middle;">Maatíp nik!</td>
-											<td style="text-align:center; vertical-align:middle;">Leave me alone!<p style="font-size:0.8em;">(said to 1 person)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
-											<audio controls>
-												<source src="sounds/N - Leave me alone (sg) - Combo.wav" type="audio/wav">
-											</audio></td>
-										</tr>
-										<tr>
-											<td style="text-align:center; vertical-align:middle;">14b</td>
-											<td> </td>
-											<td style="text-align:center; vertical-align:middle;">Maatiwá nik!</td>
-											<td style="text-align:center; vertical-align:middle;">Leave me alone!<p style="font-size:0.8em;">(said to 2+ people)</p></td>
-											<td style="text-align:center; vertical-align:middle;">
-											<audio controls>
-												<source src="sounds/N - Leave me alone (pl) - Combo.wav" type="audio/wav">
 											</audio></td>
 										</tr>
 									</table>
@@ -186,7 +138,8 @@
 
 
 
-									<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+
+
 
 <script>
 function myFunction() {
