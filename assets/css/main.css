@@ -2264,7 +2264,7 @@ input, select, textarea {
 
 
 
-#myInput {
+#myInput, #myInput_m {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
@@ -2276,7 +2276,7 @@ input, select, textarea {
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myTable {
+#myTable, #myTable_m {
   border-collapse: collapse; /* Collapse borders */
   width: 94%; /* Partial width */
   margin-left: 3%;
@@ -2285,17 +2285,17 @@ input, select, textarea {
   font-size: 18px; /* Increase font-size */
 }
 
-#myTable th, #myTable td {
+#myTable th, #myTable td, #myTable_m th, #myTable_m td {
   text-align: left; /* Left-align text */
   padding: 12px; /* Add padding */
 }
 
-#myTable tr {
+#myTable tr, #myTable_m tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
+#myTable tr.header, #myTable tr:hover, #myTable_m tr.header, #myTable_m tr:hover {
   /* Add a grey background color to the table header and on hover */
   background-color: #f1f1f1;
 }
