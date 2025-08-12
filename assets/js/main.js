@@ -101,8 +101,9 @@ function showhide(id) {
 
 // When the user clicks on <div>, open the popup
 function popupFunction(event) {
-	event.target.children[0].classList.toggle("show");
+  event.target.children[0].classList.toggle("show");
 }
+
 
 
 
@@ -112,3 +113,48 @@ function copy_to_clipboard( elm_id ) {
   var text = document.getElementById( elm_id ).innerHTML;
   navigator.clipboard.writeText( text );
 }
+
+
+
+// FUNCTION FOR COPYING TEXT FROM INPUT FIELD TO CLIPBOARD
+
+function copyToClipboard() {
+  // Get the input field element
+  var copyText = document.getElementById("myInput");
+
+  // Select the text in the input field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  navigator.clipboard.writeText(copyText.value)
+}
+
+// FUNCTION FOR COPYING TEXT FROM INPUT FIELD TO CLIPBOARD [[FOR MOBILE]]
+
+function copyToClipboard_m() {
+  // Get the input field element
+  var copyText = document.getElementById("myInput_m");
+
+  // Select the text in the input field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  navigator.clipboard.writeText(copyText.value)
+}
+
+
+
+// FUNCTION FOR CHARACTER PICKER
+
+function addLetter(letter) {
+	const inputField = document.getElementById("myInput");
+	inputField.value += letter;
+}
+
+// FUNCTION FOR CHARACTER PICKER [[FOR MOBILE]]
+
+function addLetter_m(letter) {
+	const inputField = document.getElementById("myInput_m");
+	inputField.value += letter;
+}
+
