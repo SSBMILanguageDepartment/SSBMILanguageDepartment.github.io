@@ -2317,11 +2317,18 @@ input, select, textarea {
 .popup .popuptext {
   visibility: hidden;
   width: 300px;
-  background-color: #e8e8e8;
+  background-color: #fff;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: #009EF8;
+
   color: #51574f;
   font-weight: normal;
   text-align: left;
-  border-radius: 6px;
+  line-height: 1.4em;
+
+  border-radius: 12px;
   padding: 12px 12px;
   position: absolute;
   z-index: 1;
@@ -2336,10 +2343,10 @@ input, select, textarea {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -8px;
+  border-width: 8px;
   border-style: solid;
-  border-color: #e8e8e8 transparent transparent transparent;
+  border-color: #009EF8 transparent transparent transparent;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
