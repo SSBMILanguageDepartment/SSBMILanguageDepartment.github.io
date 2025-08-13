@@ -158,3 +158,20 @@ function addLetter_m(letter) {
 	inputField.value += letter;
 }
 
+
+
+// 
+
+let currentPlayingAudio = null; // To keep track of the currently playing audio
+
+function playPauseAudio(audioId) {
+    const audio = document.getElementById(audioId);
+
+    if (audio.paused) {
+        audio.play();
+        currentPlayingAudio = audio;
+    } else {
+        audio.pause();
+        currentPlayingAudio = null;
+    }
+}
