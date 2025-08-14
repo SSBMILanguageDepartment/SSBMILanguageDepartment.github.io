@@ -10,7 +10,10 @@
 		<script src="../../assets/js/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$("#aaa").load("header.html");
+				$("#header_content").load("header.html");
+			});
+			$(document).ready(function(){
+				$("#footer_content").load("footer.html");
 			});
 		</script>
 	</head>
@@ -18,11 +21,13 @@
 	<body>
 		<div id="page-wrapper">
 
-			<div id="aaa"></div>
+			<div id="header_content"></div>
 
 			<main>
 			<p>this is a test 6</p>
 			</main>
+
+			<div id="footer_content"></div>
 
 		</div>
 
