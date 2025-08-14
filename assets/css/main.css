@@ -1530,6 +1530,13 @@ input, select, textarea {
 			box-shadow: inset 0px 0px 0px 1px #3ecceb;
 		}
 
+	button.audioButton {
+		color:#009EF8;
+		font-size:1.0em;
+		padding: 6px 6px 6px 6px;
+	}
+
+
 /* Header */
 
 	#header-wrapper {
