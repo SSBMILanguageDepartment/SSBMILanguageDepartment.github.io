@@ -71,7 +71,7 @@
 									<p>The Language Department created this webpage in collaboration with our Summer Youth Interns and the Environmental Department as part of a plant signage project sharing information about plants found on the Shingle Springs Rancheria. You can use the search function below to look up individual plants by their Nisenan, English, or Latin names as well as use the links to learn more and listen to their Nisenan names.</p>
 
 
-									<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Nisenan, English, or Latin name..." style="margin-top:2em;">
+									<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search by Nisenan, English, or Latin name..." style="margin-top:2em;">
 
 									<table id="myTable">
 										<tr class="header">
@@ -217,82 +217,6 @@
 
 									<p style="font-size:0.7em; margin-top:3em;"><strong>Warning:</strong> Do not attempt any activities described on this site. The Shingle Springs Band of Miwok Indians ("Tribe") makes no guarantee as to their risks/safety and provides this information for educational purposes. Engaging in these activities may result in serious injury or death. The Tribe is not responsible for any harm resulting from attempting these activities.</p>
 
-<script>
-function myFunction() {
-  // Declare variables
-  var input, filter, table, tr, td1, td2, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 1; i < tr.length; i++) {
-    if (tr[i].textContent.toUpperCase().indexOf(filter) > -1) {
-      tr[i].style.display = "";
-    } else {
-      tr[i].style.display = "none";
-    }      
-  }
-}
-</script>
-
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  // Set the sorting direction to ascending:
-  dir = "asc";
-  /* Make a loop that will continue until
-  no switching has been done: */
-  while (switching) {
-    // Start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /* Loop through all table rows (except the
-    first, which contains table headers): */
-    for (i = 1; i < (rows.length - 1); i++) {
-      // Start by saying there should be no switching:
-      shouldSwitch = false;
-      /* Get the two elements you want to compare,
-      one from current row and one from the next: */
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /* Check if the two rows should switch place,
-      based on the direction, asc or desc: */
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark that a switch has been done: */
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      // Each time a switch is done, increase this count by 1:
-      switchcount ++;
-    } else {
-      /* If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again. */
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
 
 								</section>
 
@@ -330,7 +254,7 @@ function sortTable(n) {
 
 
 
-									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2025-07-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2025-08-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 								</section>
 
 							</div>
