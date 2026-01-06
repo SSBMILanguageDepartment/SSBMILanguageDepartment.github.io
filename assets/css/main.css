@@ -1785,7 +1785,7 @@ input, select, textarea {
 		/* Basic */
 
 			html, body {
-				overflow-x: hidden;
+				overflow-x: visible;
 			}
 
 		/* Page Wrapper */
@@ -2271,7 +2271,7 @@ input, select, textarea {
 
 
 
-#myInput, #myInput_m {
+#myInput, #myInput_m, #myInput_Miw, #myInput_Miw_m {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
@@ -2283,7 +2283,7 @@ input, select, textarea {
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myTable, #myTable_m {
+#myTable, #myTable_m, #myTable_Miw, #myTable_Miw_m {
   border-collapse: collapse; /* Collapse borders */
   width: 94%; /* Partial width */
   margin-left: 3%;
@@ -2292,17 +2292,17 @@ input, select, textarea {
   font-size: 18px; /* Increase font-size */
 }
 
-#myTable th, #myTable td, #myTable_m th, #myTable_m td {
+#myTable th, #myTable td, #myTable_m th, #myTable_m td, #myTable_Miw th, #myTable_Miw td, #myTable_Miw_m th, #myTable_Miw_m td {
   text-align: left; /* Left-align text */
   padding: 12px; /* Add padding */
 }
 
-#myTable tr, #myTable_m tr {
+#myTable tr, #myTable_m tr, #myTable_Miw tr, #myTable_Miw_m tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover, #myTable_m tr.header, #myTable_m tr:hover {
+#myTable tr.header, #myTable tr:hover, #myTable_m tr.header, #myTable_m tr:hover, #myTable_Miw tr.header, #myTable_Miw tr:hover, #myTable_Miw_m tr.header, #myTable_Miw_m tr:hover {
   /* Add a grey background color to the table header and on hover */
   background-color: #f1f1f1;
 }
@@ -2359,4 +2359,46 @@ input, select, textarea {
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
+}
+
+
+
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 1.1em;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
