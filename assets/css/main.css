@@ -2283,7 +2283,7 @@ input, select, textarea {
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myTable, #myTable_m, #myTable_Miw, #myTable_Miw_m {
+#myTable, #myTable_m, #myTable2, #myTable2_m, #myTable_Miw, #myTable_Miw_m {
   border-collapse: collapse; /* Collapse borders */
   width: 94%; /* Partial width */
   margin-left: 3%;
@@ -2292,17 +2292,17 @@ input, select, textarea {
   font-size: 18px; /* Increase font-size */
 }
 
-#myTable th, #myTable td, #myTable_m th, #myTable_m td, #myTable_Miw th, #myTable_Miw td, #myTable_Miw_m th, #myTable_Miw_m td {
+#myTable th, #myTable td, #myTable_m th, #myTable_m td, #myTable2 th, #myTable2 td, #myTable2_m th, #myTable2_m td, #myTable_Miw th, #myTable_Miw td, #myTable_Miw_m th, #myTable_Miw_m td {
   text-align: left; /* Left-align text */
   padding: 12px; /* Add padding */
 }
 
-#myTable tr, #myTable_m tr, #myTable_Miw tr, #myTable_Miw_m tr {
+#myTable tr, #myTable_m tr, #myTable2 tr, #myTable2_m tr, #myTable_Miw tr, #myTable_Miw_m tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover, #myTable_m tr.header, #myTable_m tr:hover, #myTable_Miw tr.header, #myTable_Miw tr:hover, #myTable_Miw_m tr.header, #myTable_Miw_m tr:hover {
+#myTable tr.header, #myTable tr:hover, #myTable_m tr.header, #myTable_m tr:hover, #myTable2 tr.header, #myTable2 tr:hover, #myTable2_m tr.header, #myTable2_m tr:hover, #myTable_Miw tr.header, #myTable_Miw tr:hover, #myTable_Miw_m tr.header, #myTable_Miw_m tr:hover {
   /* Add a grey background color to the table header and on hover */
   background-color: #f1f1f1;
 }
@@ -2380,7 +2380,7 @@ input, select, textarea {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 10px 16px;
   transition: 0.3s;
   font-size: 1.1em;
 }
