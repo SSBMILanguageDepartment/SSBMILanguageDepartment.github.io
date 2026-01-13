@@ -103,17 +103,17 @@
 
 									<!-- Desktop Tab Buttons will go here -->
 									<div class="tab" style="position:sticky; top:0; z-index:10;">
-										<button class="tablinks" onclick="openTab(event, 'Instructions')" id="defaultOpen">Instructions</button>
-										<button class="tablinks" onclick="openTab(event, 'Numbers')">Nisenan Numbers</button>
-										<button class="tablinks" onclick="openTab(event, 'Hiik’í')">Hiik’í: The Big Snake</button>
-										<button class="tablinks" onclick="openTab(event, 'Gameplay')">Gameplay Language</button>
-										<button class="tablinks" onclick="openTab(event, 'GetIt')">Get the Game</button>
+										<a href="#Instructions"><button class="tablinks" onclick="openTab(event, 'Instructions')" id="defaultOpen">Instructions</button></a>
+										<a href="#Numbers"><button class="tablinks" onclick="openTab(event, 'Numbers')">Nisenan Numbers</button></a>
+										<a href="#Hiik’í"><button class="tablinks" onclick="openTab(event, 'Hiik’í')">Hiik’í: The Big Snake</button></a>
+										<a href="#Gameplay"><button class="tablinks" onclick="openTab(event, 'Gameplay')">Gameplay Language</button></a>
+										<a href="#GetIt"><button class="tablinks" onclick="openTab(event, 'GetIt')">Get the Game</button></a>
 									</div>
 
 
 
 									<!-- Desktop 'Instructions' begins here -->
-									<div id="Instructions" class="tabcontent" style="padding-bottom:1em;">
+									<div id="Instructions" class="tabcontent" style="padding-top:3em; padding-bottom:1em;">
 
 									<p style="margin-top:1em;">Put your game pieces at the <strong>hoyyahá (start)</strong>.</p>
 									<p>Take turns rolling one dice and moving your game piece forward the number of spaces you rolled.</p>
@@ -189,17 +189,749 @@
 
 
 
+
+
 									<!-- Desktop 'Numbers' begins here -->
-									<div id="Numbers" class="tabcontent">
+									<div id="Numbers" class="tabcontent" style="padding-top:3em; padding-bottom:1em;">
+
+									<h4 style="margin-top:1.4em;"><strong>The Nisenan Language</strong></h4>
+									<p>The Nisenan language has four major dialects; you can see approximately where these dialects are spoken on the map below:</p>
+									<div style="text-align:center; margin-top:1em;">
+										<img src="../misc/images/Golla_map_2025-08-05.jpg" style="max-width:50%;">
+										<p style="font-size:0.8em;">Map adapted from the book "California Indian languages" by Victor Golla (2011).</p>
+									</div>
+									<p style="margin-top:1em;">The SSBMI Community has ties to the Nisenan language through the Tribe's Matriarchs, <strong>Pamela Cleanso Adams</strong> and <strong>Annie Hill Murray Paris</strong>. Pamela spoke <u>Valley Nisenan</u> and, based on where she was from and the language of her relations, Annie likely spoke <u>Southern Hill Nisenan</u>.</p>
+
+
+									<h4 style="margin-top:3em;"><strong>Nisenan Numbers</strong></h4>
+
+
+									<p>Speakers from different areas use some different numbers. Even in the same area, there is often more than one way to say a given number. This can be overwhelming when you are learning the language! We recommend learning one system first as a foundation; then you can learn variations on that system.</p> 
+									<p>This gameboard features just one of several ways to count from 1 to 50 in Southern Hill Nisenan, the dialect that Annie Hill Murray Paris likely spoke. We learn this number system primarily from <strong>William Joseph</strong> (a.k.a. <strong>Bill Joe</strong>), who also passed on the story of Hiik’í that inspired our gameboard design. You can explore the table below to listen to this way of counting from 1-50!</p>
+									
+
+									<table id="myTable2" style="max-width:80%;">
+										<tr class="header">
+											<th onclick="sortTable2(0)" style="width:50%;"><strong>Nisenan</strong></th>
+											<th><strong> </strong></th>
+											<th onclick="sortTable2(1)"><strong>English</strong></th>
+											<th><strong> </strong></th>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">wittee</span>wíttee<span id="num_01a" style="display: none;">wíttee</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 1 (digit, BJ) - wíttee - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">1</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_01a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peen</span>peen<span id="num_02a" style="display: none;">peen</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 2 (digit, BJ) - peen - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">2</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_02a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">sapwiy</span>sapwíy<span id="num_03a" style="display: none;">sapwíy</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 3 (digit, BJ) - sapwíy - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">3</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_03a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">c’iiy</span>c’ɨɨy<span id="num_04a" style="display: none;">c’ɨɨy</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 4 (digit, BJ) - c’ɨɨy - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">4</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_04a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maawik</span>máawɨk<span id="num_05a" style="display: none;">máawɨk</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 5 (digit, BJ) - máawɨk - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">5</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_05a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">timboo</span>tɨ́mboo<span id="num_06a" style="display: none;">tɨ́mboo</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 6 (digit, BJ) - tɨ́mboo - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">6</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_06a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenimboo</span>peenímboo<span id="num_07a" style="display: none;">peenímboo</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 7 (digit, BJ) - peenímboo - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">7</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_07a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenc’iiy</span>peenc’ɨ́ɨy<span id="num_08a" style="display: none;">peenc’ɨ́ɨy</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 8 (digit, BJ) - peenc’ɨ́ɨy - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">8</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_08a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">c’iiyimboo</span>c’ɨɨyímboo<span id="num_09a" style="display: none;">c’ɨɨyímboo</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 9 (digit, BJ) - c’ɨɨyímboo - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">9</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_09a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’am</span>maac’ám<span id="num_10a" style="display: none;">maac’ám</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 10 (digit, BJ) - maac’ám - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">10</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_10a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">hiwwooto</span>hɨwwootó<span id="num_11a" style="display: none;">hɨwwootó</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 11 (digit, BJ) - hɨwwootó - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">11</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_11a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenooto</span>peenootó<span id="num_12a" style="display: none;">peenootó</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 12 (digit, BJ) - peenootó - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">12</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_12a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">sapwiyni’al</span>sapwiyni’ál<span id="num_13a" style="display: none;">sapwiyni’ál</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 13 (digit, BJ) - sapwiyni’ál - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">13</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_13a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">c’iiyni’al</span>c’ɨɨyni’ál<span id="num_14a" style="display: none;">c’ɨɨyni’ál</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 14 (digit, BJ) - c’ɨɨyni’ál - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">14</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_14a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">hiw’al</span>hɨw’ál<span id="num_15a" style="display: none;">hɨw’ál</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 15 (digit, BJ) - hɨw’ál - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">15</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_15a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">oyseeto</span>oyseetó<span id="num_16a" style="display: none;">oyseetó</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 16 (digit, BJ) - oyseetó - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">16</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_16a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenikim maydik</span>peenikím máydɨk<span id="num_17a" style="display: none;">peenikím máydɨk</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 17 (digit, BJ) - peenikím máydɨk - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">17</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_17a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">sapwiynikim maydik</span>sapwiynikím máydɨk<span id="num_18a" style="display: none;">sapwiynikím máydɨk</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 18 (digit, BJ) - sapwiynikím máydɨk - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">18</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_18a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">c’iiynikim maydik</span>c’ɨɨynikím máydɨk<span id="num_19a" style="display: none;">c’ɨɨynikím máydɨk</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 19 (digit, BJ) - c’ɨɨynikím máydɨk - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">19</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_19a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyee</span>wítteem huyée<span id="num_20a" style="display: none;">wítteem huyée</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 20 (digit, BJ) - wítteem huyée - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">20</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_20a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen wittee hoka</span>wítteem huyéen wíttee hoká<span id="num_21a" style="display: none;">wítteem huyéen wíttee hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 21 (digit, BJ) - wítteem huyéen wíttee hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">21</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_21a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen peen hoka</span>wítteem huyéen peen hoká<span id="num_22a" style="display: none;">wítteem huyéen peen hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 22 (digit, BJ) - wítteem huyéen peen hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">22</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_22a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen sapwiy hoka</span>wítteem huyéen sapwíy hoká<span id="num_23a" style="display: none;">wítteem huyéen sapwíy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 23 (digit, BJ) - wítteem huyéen sapwíy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">23</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_23a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen c’iiy hoka</span>wítteem huyéen c’ɨɨy hoká<span id="num_24a" style="display: none;">wítteem huyéen c’ɨɨy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 24 (digit, BJ) - wítteem huyéen c’ɨɨy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">24</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_24a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen maawik hoka</span>wítteem huyéen máawɨk hoká<span id="num_25a" style="display: none;">wítteem huyéen máawɨk hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 25 (digit, BJ) - wítteem huyéen máawɨk hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">25</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_25a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen timboo hoka</span>wítteem huyéen tɨ́mboo hoká<span id="num_26a" style="display: none;">wítteem huyéen tɨ́mboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 26 (digit, BJ) - wítteem huyéen tɨ́mboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">26</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_26a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen peenimboo hoka</span>wítteem huyéen peenímboo hoká<span id="num_27a" style="display: none;">wítteem huyéen peenímboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 27 (digit, BJ) - wítteem huyéen peenímboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">27</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_27a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen peenc’iiy hoka</span>wítteem huyéen peenc’ɨ́ɨy hoká<span id="num_28a" style="display: none;">wítteem huyéen peenc’ɨ́ɨy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 28 (digit, BJ) - wítteem huyéen peenc’ɨ́ɨy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">28</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_28a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">witteem huyeen c’iiyimboo hoka</span>wítteem huyéen c’ɨɨyímboo hoká<span id="num_29a" style="display: none;">wítteem huyéen c’ɨɨyímboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 29 (digit, BJ) - wítteem huyéen c’ɨɨyímboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">29</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_29a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyee</span>maac’amní wítteem huyée<span id="num_30a" style="display: none;">maac’amní wítteem huyée</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 30 (digit, BJ) - maac’amní wítteem huyée - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">30</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_30a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen wittee hoka</span>maac’amní wítteem huyéen wíttee hoká<span id="num_31a" style="display: none;">maac’amní wítteem huyéen wíttee hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 31 (digit, BJ) - maac’amní wítteem huyéen wíttee hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">31</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_31a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen peen hoka</span>maac’amní wítteem huyéen peen hoká<span id="num_32a" style="display: none;">maac’amní wítteem huyéen peen hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 32 (digit, BJ) - maac’amní wítteem huyéen peen hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">32</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_32a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen sapwiy hoka</span>maac’amní wítteem huyéen sapwíy hoká<span id="num_33a" style="display: none;">maac’amní wítteem huyéen sapwíy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 33 (digit, BJ) - maac’amní wítteem huyéen sapwíy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">33</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_33a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen c’iiy hoka</span>maac’amní wítteem huyéen c’ɨɨy hoká<span id="num_34a" style="display: none;">maac’amní wítteem huyéen c’ɨɨy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 34 (digit, BJ) - maac’amní wítteem huyéen c’ɨɨy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">34</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_34a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen maawik hoka</span>maac’amní wítteem huyéen máawɨk hoká<span id="num_35a" style="display: none;">maac’amní wítteem huyéen máawɨk hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 35 (digit, BJ) - maac’amní wítteem huyéen máawɨk hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">35</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_35a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen timboo hoka</span>maac’amní wítteem huyéen tɨ́mboo hoká<span id="num_36a" style="display: none;">maac’amní wítteem huyéen tɨ́mboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 36 (digit, BJ) - maac’amní wítteem huyéen tɨ́mboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">36</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_36a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen peenimboo hoka</span>maac’amní wítteem huyéen peenímboo hoká<span id="num_37a" style="display: none;">maac’amní wítteem huyéen peenímboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 37 (digit, BJ) - maac’amní wítteem huyéen peenímboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">37</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_37a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen peenc’iiy hoka</span>maac’amní wítteem huyéen peenc’ɨ́ɨy hoká<span id="num_38a" style="display: none;">maac’amní wítteem huyéen peenc’ɨ́ɨy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 38 (digit, BJ) - maac’amní wítteem huyéen peenc’ɨ́ɨy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">38</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_38a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni witteem huyeen c’iiyimboo hoka</span>maac’amní wítteem huyéen c’ɨɨyímboo hoká<span id="num_39a" style="display: none;">maac’amní wítteem huyéen c’ɨɨyímboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 39 (digit, BJ) - maac’amní wítteem huyéen c’ɨɨyímboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">39</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_39a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyee</span>peením huyée<span id="num_40a" style="display: none;">peením huyée</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 40 (digit, BJ) - peením huyée - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">40</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_40a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen wittee hoka</span>peením huyéen wíttee hoká<span id="num_41a" style="display: none;">peením huyéen wíttee hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 41 (digit, BJ) - peením huyéen wíttee hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">41</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_41a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen peen hoka</span>peením huyéen peen hoká<span id="num_42a" style="display: none;">peením huyéen peen hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 42 (digit, BJ) - peením huyéen peen hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">42</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_42a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen sapwiy hoka</span>peením huyéen sapwíy hoká<span id="num_43a" style="display: none;">peením huyéen sapwíy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 43 (digit, BJ) - peením huyéen sapwíy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">43</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_43a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen c’iiy hoka</span>peením huyéen c’ɨɨy hoká<span id="num_44a" style="display: none;">peením huyéen c’ɨɨy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 44 (digit, BJ) - peením huyéen c’ɨɨy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">44</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_44a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen maawik hoka</span>peením huyéen máawɨk hoká<span id="num_45a" style="display: none;">peením huyéen máawɨk hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 45 (digit, BJ) - peením huyéen máawɨk hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">45</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_45a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen timboo hoka</span>peením huyéen tɨ́mboo hoká<span id="num_46a" style="display: none;">peením huyéen tɨ́mboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 46 (digit, BJ) - peením huyéen tɨ́mboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">46</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_46a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen peenimboo hoka</span>peením huyéen peenímboo hoká<span id="num_47a" style="display: none;">peením huyéen peenímboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 47 (digit, BJ) - peením huyéen peenímboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">47</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_47a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen peenc’iiy hoka</span>peením huyéen peenc’ɨ́ɨy hoká<span id="num_48a" style="display: none;">peením huyéen peenc’ɨ́ɨy hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 48 (digit, BJ) - peením huyéen peenc’ɨ́ɨy hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">48</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_48a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">peenim huyeen c’iiyimboo hoka</span>peením huyéen c’ɨɨyímboo hoká<span id="num_49a" style="display: none;">peením huyéen c’ɨɨyímboo hoká</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 49 (digit, BJ) - peením huyéen c’ɨɨyímboo hoká - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">49</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_49a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">maac’amni peenim huyee</span>maac’amní peením huyée<span id="num_50a" style="display: none;">maac’amní peením huyée</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - 50 (digit, BJ) - maac’amní peením huyée - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">50</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('num_50a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+									</table>
+
+
 
 									</div>
+
+
 
 
 
 									<!-- Desktop 'Hiik’í' begins here -->
 									<div id="Hiik’í" class="tabcontent">
 
-									<div class="row main-row" style="margin-top:-2.8em;">
+									<div class="row main-row" style="padding-top:3em; margin-top:-3.1em;">
 
 										<div class="col-7 col-12-medium">
 
@@ -228,14 +960,213 @@
 
 
 									<!-- Desktop 'Gameplay' begins here -->
-									<div id="Gameplay" class="tabcontent">
+									<div id="Gameplay" class="tabcontent" style="padding-top:3em; padding-bottom:1em;">
+
+									<p style="margin-top:1em;">Most of us don't play boardgames in total silence! That would be weird, so why not speak more Nisenan as you play? Explore the table below to learn some of the Nisenan phrases we often use while playing Koymóon C’aan Ha and other games.</p>
+									<p>Try using Language Challenge Mode (see "How to play") to practice these phrases!</p>
+
+									<div id="NisenanInput" style="position:sticky; top:35px; background-color:white;">
+
+									<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search by Nisenan or English translation..." style="margin-top:2em; width:55%;">
+									<button onclick="addLetter('á'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">á</button>
+									<button onclick="addLetter('é'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">é</button>
+									<button onclick="addLetter('í'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">í</button>
+									<button onclick="addLetter('ó'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ó</button>
+									<button onclick="addLetter('ú'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ú</button>
+									<button onclick="addLetter('ɨ'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ɨ</button>
+									<button onclick="addLetter('ɨ́'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ɨ́</button>
+									<button onclick="addLetter('ə'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ə</button>
+									<button onclick="addLetter('ə́'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ə́</button>
+									<button onclick="addLetter('’'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">’</button>
+									<button onclick="copyToClipboard()" style="color:#009EF8; font-size:1.1em; margin-left:1%; margin-bottom:1.0em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+
+									</div>
+									
+
+									<table id="myTable">
+										<tr class="header">
+											<th onclick="sortTable(0)"><strong>Nisenan</strong></th>
+											<th><strong> </strong></th>
+											<th onclick="sortTable(1)"><strong>English</strong></th>
+											<th><strong> </strong></th>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Koymoon Caan Ha</span>Koymóon C’aan Ha<span id="01a" style="display: none;">Koymóon C’aan Ha</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - rattlesnakes and ladders - koymóon c’aan ha - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">Rattlesnakes and Logs</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('01a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">koymoo</span>koymóo<span id="02a" style="display: none;">koymóo</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - rattlesnake, snake - koymóo - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">rattlesnake, snake</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('02a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Hiiki</span>Hiik’í<span id="03a" style="display: none;">Hiik’í</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - hiik’í, the big snake - hiik’í - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">name of the Big Snake</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('03a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">caa</span>c’aa<span id="04a" style="display: none;">c’aa</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - tree, stick - c’aa - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">tree, stick, log</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('04a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">hoyyaha</span>hoyyahá<span id="05a" style="display: none;">hoyyahá</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - beginning, start - hoyyahá - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">beginning, start</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('05a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">wiw</span>wɨw<span id="06a" style="display: none;">wɨw</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - goal - wɨw - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">goal</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('06a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Kaatope</span>K’aatopé!<span id="07a" style="display: none;">K’aatopé!</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - let's play (1PL.IMP) - k’aatopé - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">Let's play!<p style="font-size:0.8em;">(said to 2+ people)</p></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('07a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Mi kaake</span>Mi k’aak’é.<span id="08a" style="display: none;">Mi k’aak’é.</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - Go ahead and do it (echo pro, -k’e) - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">It's your turn.<p style="font-size:0.8em;">(said to 1 person)</p></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('08a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Nin</span>Nɨn!<span id="09a" style="display: none;">Nɨn!</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - Roll (nɨn-, sg) - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">Roll!<p style="font-size:0.8em;">(said to 1 person)</p></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('09a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Haa ninim ni</span>Haa nɨním ni.<span id="10a" style="display: none;">Haa nɨním ni.</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - I'm rolling the dice (nɨn-) - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">I'm rolling the dice.</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('10a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Halem ni</span>Halém ni!<span id="11a" style="display: none;">Halém ni!</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - I win - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">I win!</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('11a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Halemeyim ni</span>Halemeyím ni.<span id="12a" style="display: none;">Halemeyím ni.</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="snakesandladders/sounds/N - I lose (halemey-) - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;">I lose.</td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('12a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+									</table>
 
 									</div>
 
 
 
 									<!-- Desktop 'GetIt' begins here -->
-									<div id="GetIt" class="tabcontent" style="padding-bottom:1em;">
+									<div id="GetIt" class="tabcontent" style="padding-top:3em; padding-bottom:1em;">
 
 									<p style="margin-top:1em;">The SSBMI Language Department handed out copies of Koymóon C’aan Ha to SSBMI Tribal Member households at the 2026 Annual Meeting. If you are an SSBMI Tribal Member and have not received your game, please email us at <a href="mailto: language@ssband.org">language@ssband.org</a>.</p>
 									<p>Not an SSBMI Tribal Member and/or don't have an "official" Koymóon C’aan Ha set? You can still play the game! You can download, print, and tape together your own gameboard and use dice and game pieces from other games you have in your home:</p>
@@ -255,14 +1186,18 @@
 
 
 
+
+
+
+
 									<!-- Mobile will go here -->
 
 									<!-- Mobile Tab Buttons will go here -->
 									<div class="mobile-only" style="margin-top:3em;">
 
-									<div class="tab" style="position:sticky; top:45px; z-index:10; font-size:0.9em;">
+									<div class="tab" style="position:sticky; top:45px; z-index:10; font-size:0.8em;">
 										<button class="tablinks" onclick="openTab_m(event, 'Instructions_m')" id="defaultOpenMobile">Instructions</button>
-										<button class="tablinks" onclick="openTab_m(event, 'Numbers_m')">Nisenan Numbers</button>
+										<button class="tablinks" onclick="openTab_m(event, 'Numbers_m')">Numbers</button>
 										<button class="tablinks" onclick="openTab_m(event, 'Hiik’í_m')">Hiik’í: The Big Snake</button>
 										<button class="tablinks" onclick="openTab_m(event, 'Gameplay_m')">Gameplay Language</button>
 										<button class="tablinks" onclick="openTab_m(event, 'GetIt_m')">Get the Game</button>
@@ -375,7 +1310,195 @@
 
 
 									<!-- Mobile 'Gameplay_m' begins here -->
-									<div id="Gameplay_m" class="tabcontent">
+									<div id="Gameplay_m"  class="tabcontent" style="padding-bottom:1em;">
+
+									<p style="margin-top:1em;">Most of us don't play boardgames in total silence! That would be weird, so why not speak more Nisenan as you play? Explore the table below to learn some of the Nisenan phrases we often use while playing Koymóon C’aan Ha and other games.</p>
+									<p>Try using Language Challenge Mode (see "How to play") to practice these phrases!</p>
+
+									<div id="NisenanInputMobile" style="position:sticky; top:120px; background-color:white; text-align:center;">
+
+									<input type="text" id="myInput_m" onkeyup="searchTable_m()" placeholder="Search by Nisenan or English..." style="margin-top:2em; width:75%;">
+									<button onclick="copyToClipboard_m()" style="color:#009EF8; font-size:1.1em; margin-left:1%; margin-bottom:1.0em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+
+									<div style="text-align:center;">
+										<button onclick="addLetter_m('á'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">á</button>
+										<button onclick="addLetter_m('é'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">é</button>
+										<button onclick="addLetter_m('í'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">í</button>
+										<button onclick="addLetter_m('ó'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ó</button>
+										<button onclick="addLetter_m('ú'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ú</button>
+										<button onclick="addLetter_m('ɨ'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ɨ</button>
+										<button onclick="addLetter_m('ɨ́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ɨ́</button>
+										<button onclick="addLetter_m('ə'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ə</button>
+										<button onclick="addLetter_m('ə́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ə́</button>
+										<button onclick="addLetter_m('’'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">’</button>
+									</div>
+
+									</div>
+
+									<table id="myTable_m" style="margin-top:30px;">
+										
+										<tr class="header">
+											<th style="text-align:center;" onclick="sortTable_m(0)"><strong>Nisenan</strong></th>
+											<th><strong> </strong></th>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Koymoon Caan Ha</span>Koymóon C’aan Ha<span id="01a_m" style="display: none;">Koymóon C’aan Ha</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">Rattlesnakes and Logs</p>
+												<audio preload="metadata" id="a_01a" src="snakesandladders/sounds/N - rattlesnakes and ladders - koymóon c’aan ha - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_01a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('01a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">koymoo</span>koymóo<span id="02a_m" style="display: none;">koymóo</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">rattlesnake, snake</p>
+												<audio preload="metadata" id="a_02a" src="snakesandladders/sounds/N - rattlesnake, snake - koymóo - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_02a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('02a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Hiiki</span>Hiik’í<span id="03a_m" style="display: none;">Hiik’í</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">name of the Big Snake</p>
+												<audio preload="metadata" id="a_03a" src="snakesandladders/sounds/N - hiik’í, the big snake - hiik’í - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_03a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('03a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">caa</span>c’aa<span id="04a_m" style="display: none;">c’aa</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">tree, stick, log</p>
+												<audio preload="metadata" id="a_04a" src="snakesandladders/sounds/N - tree, stick - c’aa - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_04a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('04a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">hoyyaha</span>hoyyahá<span id="05a_m" style="display: none;">hoyyahá</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">beginning, start</p>
+												<audio preload="metadata" id="a_05a" src="snakesandladders/sounds/N - beginning, start - hoyyahá - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_05a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('05a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">wiw</span>wɨw<span id="06a_m" style="display: none;">wɨw</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">goal</p>
+												<audio preload="metadata" id="a_06a" src="snakesandladders/sounds/N - goal - wɨw - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_06a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('06a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Kaatope</span>K’aatopé!<span id="07a_m" style="display: none;">K’aatopé!</span>
+												</p>
+												<p style="margin-bottom:0.0em; font-size:0.9em;">Let's play!</p><p style="margin-bottom:1.5em; font-size:0.8em;">(said to 2+ people)</p>
+												<audio preload="metadata" id="a_07a" src="snakesandladders/sounds/N - let's play (1PL.IMP) - k’aatopé - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_07a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('07a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Mi k’aak’e.</span>Mi k’aak’é.<span id="08a_m" style="display: none;">Mi k’aak’é.</span>
+												</p>
+												<p style="margin-bottom:0.0em; font-size:0.9em;">It's your turn.</p><p style="margin-bottom:1.5em; font-size:0.8em;">(said to 1 person)</p>
+												<audio preload="metadata" id="a_08a" src="snakesandladders/sounds/N - Go ahead and do it (echo pro, -k’e) - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_08a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('08a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Nin</span>Nɨn!<span id="09a_m" style="display: none;">Nɨn!</span>
+												</p>
+												<p style="margin-bottom:0.0em; font-size:0.9em;">Roll!</p><p style="margin-bottom:1.5em; font-size:0.8em;">(said to 1 person)</p>
+												<audio preload="metadata" id="a_09a" src="snakesandladders/sounds/N - Roll (nɨn-, sg) - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_09a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('09a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Haa ninim ni</span>Haa nɨním ni.<span id="10a_m" style="display: none;">Haa nɨním ni.</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">I'm rolling the dice.</p>
+												<audio preload="metadata" id="a_10a" src="snakesandladders/sounds/N - I'm rolling the dice (nɨn-) - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_10a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('10a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Halem ni</span>Halém ni!<span id="11a_m" style="display: none;">Halém ni!</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">I win!</p>
+												<audio preload="metadata" id="a_11a" src="snakesandladders/sounds/N - I win - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_11a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('11a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Halemeyim ni</span>Halemeyím ni.<span id="12a_m" style="display: none;">Halemeyím ni.</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;">I lose.</p>
+												<audio preload="metadata" id="a_12a" src="snakesandladders/sounds/N - I lose - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_12a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('12a_m')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+
+									</table>
 
 									</div>
 
@@ -393,39 +1516,6 @@
 
 									</div>
 
-
-
-
-
-
-
-									<div class="row main-row" style="margin-top:-1em;">
-
-										<div class="col-6 col-12-medium">
-
-											<section>
-												<h2 style="font-size:1.2em; text-align:center;"><a href="./gofish/nisenan_gofish.html">Learn about "Welk’óy!" (Nisenan)</a></h2>
-												<div style="text-align:center;margin-top:1.5em;">
-													<img class="privateimage" src="./gofish/images/N - Welk’oy graphic.png" style="width:500px;">
-												</div>
-											</section>
-
-										</div>
-
-										<div class="col-6 col-12-medium">
-
-											<section>
-												<h2 style="font-size:1.2em; text-align:center;"><a href="./gofish/miwok_gofish.html">Learn about "Wélse’!" (Miwok)</a></h2>
-												<div style="text-align:center;margin-top:1.5em;">
-													<img class="privateimage" src="./gofish/images/M - Wélse’ graphic.png" style="width:500px;">
-												</div>
-											</section>
-
-
-										</div>
-
-									</div>
-
 								</section>
 
 							</div>
@@ -440,79 +1530,11 @@
 							<div class="col-12">
 
 								<section>
-									<h2>About the game</h2>
-									<p>SSBMI Language Department staff created "Welk’óy!" and "Wélse’!" to teach Nisenan and Miwok animal names and other language for talking about "having", "giving", and "taking" to youth and adult learners. We invite you to explore this website so that you can learn more language for playing these games, and we encourage you to try to use as much Nisenan or Miwok as you can while you play.</p>
+									<h2>Do you want to know more?</h2>
+									<p>The SSBMI Language Department maintains this website to share learning resources with the SSBMI Community as well as other members of the Nisenan & Miwok heritage communities. Check out the rest of the website to find other learning resources, like language flashcards, games, and other activities. For example, we also have printable <a href="../flashcards.html">language flashcards</a> and <a href="../activities/coloringpages.html">coloring pages</a> that you can use to practice more language.</p>
+									<p>If you have questions, please visit our offices in the SSBMI Tribal Administration building or contact us at <a href="mailto: language@ssband.org">language@ssband.org</a>.</p>
 
-
-									<p style="margin-top:3em">We wish to thank <strong>Asa Campbell</strong>, who first suggested that we could adapt "Go Fish!" as a language game by using animal flashcards instead of traditional playing cards. For this set of cards, we selected 32 animals that meet one or more of the following criteria:</p>
-									<ul style="margin-left:50px">(1) They are culturally significant to the SSBMI Tribal Membership (e.g. Coyote, Flicker, Grizzly Bear, Salmon), and/or</ul>
-									<ul style="margin-left:50px">(2) They appear prominently as characters in traditional oral narratives (e.g. Coyote, Jackrabbit, Lizard, Turtle), and/or</ul>
-									<ul style="margin-left:50px">(3) They can be seen on the rancheria grounds (e.g. Acorn Woodpecker, Flicker, Lizard, Western Bluebird, Wild Turkey)</ul>
-									<p>Many animals, like Deer and Flicker, meet all three of these criteria. We had to omit many other animals who meet some of these criteria, like Condor (who is significant to many California Native communities), Wolf (who appears in a story that we share at Beeteyihí), and Junco (who can be seen on the rancheria grounds most prominently in winter). We hope to include more animals in future "expansion" card sets.</p>
-
-
-									<p style="margin-top:3em">We present an illustration of a different animal on each "Welk’óy!"/"Wélse’!" card, which we obtained from the following sources:</p>
-									<ul style="margin-left:50px">(1) Acorn Woodpecker, Burrowing Owl, Coyote, Flicker, Great Horned Owl, Hummingbird, Mallard, Peregrine Falcon, Raven, Red-Tailed Hawk, Scrub-Jay, Turkey Vulure, Western Bluebird, & Wild Turkey were drawn by Skye Anderson; &COPY; Skye Anderson, used with permission</ul>
-									<ul style="margin-left:50px">(2) California Quail, Canada Goose, Cottontail, Lizard, & Salmon were drawn by Skye Anderson; &COPY; Shingle Springs Band of Miwok Indians</ul>
-									<ul style="margin-left:50px">(3) We adapted all other animal artwork from public domain or open source-licensed clipart provided by <a href="https://creazilla.com/" target="_blank">Creazilla</a></ul>
-
-
-									<p style="margin-top:3em">We designed the "Welk’óy!"/"Wélse’!" cards in <a href="https://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>, and printed them through <a href="https://smartpress.com" target="_blank">Smartpress</a> via their "flashcard" printing service.</p>
-
-
-									<p style="margin-top:3em">If you have questions or would like to know more about how to design your own "Go Fish!" cards, please contact us at <a href="mailto: language@ssband.org">language@ssband.org</a>.</p>
-								</section>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-			<!-- Tertiary -->
-				<div id="tertiary">
-					<div class="container">
-						<div class="row main-row">
-							<div class="col-12">
-
-								<section>
-									<h2>About the languages</h2>
-									<p>The "Welk’óy!" cards feature Nisenan animal names from speakers of the Valley dialect of Nisenan like <strong>SSBMI Matriarch Pamela Adams</strong> and her brother <strong>Tom Cleanso</strong> as well as speakers of the Southern Hill dialect of Nisenan like <strong>William Joseph</strong>, <strong>Ida Starkey</strong>, and <strong>Charlie Hunchup</strong>.</p>
-									<p>Valley Nisenan and Southern Hill Nisenan are very similar to one another in their words and grammar. Where these dialects differ, we typically prioritized Valley Nisenan language. Where Valley Nisenan speakers differ, we typically prioritized language from Pamela Adams.</p>
-
-
-									<p style="margin-top:3em">The "Wélse’!" cards feature Northern Sierra Miwok animal names taken primarily from linguist Catherine Callaghan's Northern Sierra Miwok dictionary. Callaghan worked with several Northern Sierra Miwok speakers including <strong>Queenie Miller</strong>, <strong>Elena McCauley</strong>, and <strong>Nicolas Villa Sr</strong>.</p>
-
-
-									<p style="margin-top:3em">As you play "Welk’óy!" and "Wélse’!", you may notice that many of the Nisenan and Miwok names are very similar.</p>
-									<p>For some animals, this is because Nisenan and Miwok speakers borrowed the names from one another and adapted them to the sounds of their own language. For example, <strong>Nisenan "Suuyú" and Miwok "Súyyu" (Red-Tailed Hawk)</strong> are likely related via borrowing. Many other Nisenan and Miwok words are related via borrowing, which is a common process by which all languages acquire words from neighboring languages.</p>
-									<p>For other animals, this is because the Nisenan and Miwok names imitate the call of that animal. This is called <strong>onomatopoeia</strong>, which is where the name for an animal or object is associated with the sound that it makes. Because the sound is the same, the names are similar too. For example, <strong>Nisenan "Tokk’óok’" and Miwok "Ṭókkokko" (Burrowing Owl)</strong> are similar because they both imitate Burrowing Owl's call.</p>
-									<p>Onomatopoeia is a common source of animal names in many languages. This is why some names, such as <strong>Nisenan "Kook" and Miwok "Káakulu" (Raven)</strong>, are similar to the names for the same animal in other languages spoken throughout North America and even across the globe!</p>
-									<p>Still, it is important to remember that Nisenan and Miwok are different languages with their own vocabularies. Most animal names, such as <strong>Nisenan "May" and Miwok "Ṭukúunu" (Salmon)</strong> or <strong>Nisenan "Kuuyúl" and Miwok "Calákkukka" (Dragonfly)</strong> are not related.</p>
-
-
-									<p style="margin-top:3em">If you have questions or would like to know more about Nisenan and Miwok similarities/differences, please contact us at <a href="mailto: language@ssband.org">language@ssband.org</a>.</p>
-								</section>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-			<!-- Quaternary -->
-				<div id="quaternary">
-					<div class="container">
-						<div class="row main-row">
-							<div class="col-12">
-
-								<section>
-									<h2>Would you like a copy?</h2>
-									<p>If you would like a copy of the Nisenan "Welk’óy!" and/or Miwok "Wélse’!" cards to play at home, please contact us at <a href="mailto: language@ssband.org">language@ssband.org</a>. Please understand that supplies are limited and we cannot guarantee copies for non-SSBMI Tribal Members.</p>
-									<p>If you would like to download a copy of the Nisenan "Welk’óy!" cards which you can print at home, please click <a href="./gofish/resources/N - Welk’óy cards printable.pdf" target="_blank">here</a>. (<a href="./gofish/resources/N - Welk’óy instructions printable.pdf" target="_blank">instructions</a>)</p>
-									<p>If you would like to download a copy of the Miwok "Wélse’!" cards which you can print at home, please click <a href="./gofish/resources/M - Wélse’ cards printable.pdf" target="_blank">here</a>. (<a href="./gofish/resources/M - Wélse’ instructions printable.pdf" target="_blank">instructions</a>)</p>
-
-									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2024-05-07&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2026-01-12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 								</section>
 
 							</div>
