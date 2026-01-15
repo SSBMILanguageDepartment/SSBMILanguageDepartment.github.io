@@ -1572,7 +1572,7 @@ input, select, textarea {
 			top: 0;
 			color: #fff;
 			font-size: 2.4em;
-			letter-spacing: -2px;
+			letter-spacing: 0px;
 			line-height: 86px;
 		}
 
@@ -1785,16 +1785,20 @@ input, select, textarea {
 		/* Basic */
 
 			html, body {
-				overflow-x: visible;
+				overflow-x: hidden;
 			}
 
 		/* Page Wrapper */
 
 			#page-wrapper {
-				padding-top: 44px;
+				padding-top: 0px; // 44
 			}
 
 		/* Header */
+
+			#header h1 {
+				font-size: 1.2em;
+			}
 
 			#header-wrapper {
 				background-image: -moz-linear-gradient(top, #008dab, #007294);
@@ -1802,10 +1806,6 @@ input, select, textarea {
 				background-image: -ms-linear-gradient(top, #008dab, #007294);
 				background-image: linear-gradient(top, #008dab, #007294);
 				background-color: #007294;
-			}
-
-			#header {
-				display: none;
 			}
 
 			#banner {
@@ -2094,6 +2094,70 @@ input, select, textarea {
 
 	}
 
+
+
+
+
+
+/* Desktop and mobile device toggles for HEADERS */
+
+.header-mobile-small-only {
+	display: none;
+}
+.header-mobile-only {
+	display: none;
+}
+.header-desktop-only {
+	display: none;
+}
+
+@media (max-width: 450px) {
+	.header-mobile-small-only {
+		display: block;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 451px) {
+	.header-mobile-only {
+		display: block; /* Show mobile content on smaller screens */
+	}
+}
+
+@media (min-width: 769px) {
+	.header-desktop-only {
+		display: block; /* Show desktop content on larger screens */
+	}
+}
+
+
+
+
+/* Desktop and mobile device toggles for FOOTERS */
+
+.footer-mobile-only {
+	display: none;
+}
+.footer-desktop-only {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.footer-mobile-only {
+		display: block; /* Show mobile content on smaller screens */
+		margin: auto;
+	}
+}
+
+@media (min-width: 769px) {
+	.footer-desktop-only {
+		display: block; /* Show desktop content on larger screens */
+		margin: auto;
+	}
+}
+
+
+
+
 ##############################################################################################################
 
 .dropdown {
@@ -2111,8 +2175,8 @@ input, select, textarea {
 	position: absolute;
 	right: 40px;
 	top: 0px;
-	line-height: 84px;
-	font-size: 1.3em;
+	line-height: 74px;
+	font-size: 1.2em;
 	letter-spacing: 0px;
 
 }
