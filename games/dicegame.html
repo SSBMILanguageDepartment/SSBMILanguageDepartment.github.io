@@ -143,7 +143,9 @@
 
 									<div class="desktop-only">
 
-									<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search by Nisenan phrase or English translation..." style="margin-top:2em; width:55%;">
+									<div id="NisenanInput" style="position:sticky; top:0px; background-color:white;">
+
+									<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search by Nisenan or English translation..." style="margin-top:2em; width:55%;">
 									<button onclick="addLetter('á'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">á</button>
 									<button onclick="addLetter('é'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">é</button>
 									<button onclick="addLetter('í'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">í</button>
@@ -155,6 +157,8 @@
 									<button onclick="addLetter('ə́'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ə́</button>
 									<button onclick="addLetter('’'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">’</button>
 									<button onclick="copyToClipboard()" style="color:#009EF8; font-size:1.1em; margin-left:1%; margin-bottom:1.0em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+
+									</div>
 									
 
 									<table id="myTable">
@@ -375,19 +379,24 @@
 
 									<div class="mobile-only">
 
-									<input type="text" id="myInput_m" onkeyup="searchTable_m()" placeholder="Search by Nisenan or English..." style="margin-top:2em;">
+									<div id="NisenanInputMobile" style="position:sticky; top:35px; z-index:10; background-color:white; text-align:center;">
+
+									<input type="text" id="myInput_m" onkeyup="searchTable_m()" placeholder="Search by Nisenan or English..." style="margin-top:2em; width:75%;">
+									<button onclick="copyToClipboard_m()" style="color:#009EF8; font-size:1.1em; margin-left:1%; margin-bottom:1.0em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+
 									<div style="text-align:center;">
-										<button onclick="addLetter_m('á'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">á</button>
-										<button onclick="addLetter_m('é'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">é</button>
-										<button onclick="addLetter_m('í'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">í</button>
-										<button onclick="addLetter_m('ó'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ó</button>
-										<button onclick="addLetter_m('ú'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ú</button>
-										<button onclick="addLetter_m('ɨ'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ɨ</button>
-										<button onclick="addLetter_m('ɨ́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ɨ́</button>
-										<button onclick="addLetter_m('ə'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ə</button>
-										<button onclick="addLetter_m('ə́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ə́</button>
-										<button onclick="addLetter_m('’'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">’</button>
-										<button onclick="copyToClipboard_m()" style="color:#009EF8; font-size:1.1em; margin-left:1%; margin-bottom:1.0em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+										<button onclick="addLetter_m('á'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">á</button>
+										<button onclick="addLetter_m('é'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">é</button>
+										<button onclick="addLetter_m('í'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">í</button>
+										<button onclick="addLetter_m('ó'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ó</button>
+										<button onclick="addLetter_m('ú'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ú</button>
+										<button onclick="addLetter_m('ɨ'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ɨ</button>
+										<button onclick="addLetter_m('ɨ́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ɨ́</button>
+										<button onclick="addLetter_m('ə'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ə</button>
+										<button onclick="addLetter_m('ə́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ə́</button>
+										<button onclick="addLetter_m('’'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">’</button>
+									</div>
+
 									</div>
 
 									<table id="myTable_m">
@@ -668,7 +677,7 @@
 
 
 
-									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2025-08-21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2026-01-14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 								</section>
 
 							</div>
