@@ -2099,32 +2099,32 @@ input, select, textarea {
 
 
 
-/* Desktop and mobile device toggles */
+/* Desktop and mobile device toggles for Headers */
 
-.mobile-small-only {
+.header-mobile-small-only {
 	display: none;
 }
-.mobile-only {
+.header-mobile-only {
 	display: none;
 }
-.desktop-only {
+.header-desktop-only {
 	display: none;
 }
 
 @media (max-width: 450px) {
-	.mobile-small-only {
+	.header-mobile-small-only {
 		display: block;
 	}
 }
 
 @media (max-width: 768px) and (min-width: 451px) {
-	.mobile-only {
+	.header-mobile-only {
 		display: block; /* Show mobile content on smaller screens */
 	}
 }
 
 @media (min-width: 769px) {
-	.desktop-only {
+	.header-desktop-only {
 		display: block; /* Show desktop content on larger screens */
 	}
 }
@@ -2162,7 +2162,7 @@ input, select, textarea {
 	top: 86px;
 	background-color: #f9f9f9;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+	z-index: 12;
 }
 
 .dropdown-content a {
