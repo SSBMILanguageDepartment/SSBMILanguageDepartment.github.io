@@ -1,0 +1,667 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SSBMI Language Department - Shingle Springs Rancheria building signage</title>
+		<link rel="icon" href="../images/ssbmitriangles.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+		<script src="../assets/js/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#header_content").load("../assets/header.html");
+			});
+			$(document).ready(function(){
+				$("#footer_content").load("../assets/footer.html");
+			});
+		</script>
+		<link rel="stylesheet" href="../assets/css/progres-bar.css" />
+		<style>
+			.mobile-only {
+				display: none;
+			}
+			.desktop-only {
+				display: none;
+			}
+
+			@media (max-width: 768px) {
+				.mobile-only {
+					display: block; /* Show mobile content on smaller screens */
+				}
+			}
+
+			@media (min-width: 769px) {
+				.desktop-only {
+					display: block; /* Show desktop content on larger screens */
+				}
+			}
+
+			.mediPlayer {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<div id="header_content"></div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2 style="font-size:2em;">Shingle Springs Rancheria building signage</h2>
+
+									<p>The Language Department created this webpage to share audio recordings of the Nisenan names on building signage in the Tribal Admin and Ed Center buildings. You can use the search function below to look up individual room and hallway names, or continue scrolling to browse.</p>
+
+
+
+
+									<div class="desktop-only" style="max-height:30em; overflow:auto; margin-bottom:3em;">
+
+									<div id="NisenanInput" style="position:sticky; top:0px; z-index:10; background-color:#fff;">
+
+									<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search by Nisenan name or English translation..." style="margin-top:2em; width:55%;">
+									<button onclick="addLetter('á'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">á</button>
+									<button onclick="addLetter('é'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">é</button>
+									<button onclick="addLetter('í'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">í</button>
+									<button onclick="addLetter('ó'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ó</button>
+									<button onclick="addLetter('ú'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ú</button>
+									<button onclick="addLetter('ɨ'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ɨ</button>
+									<button onclick="addLetter('ɨ́'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ɨ́</button>
+									<button onclick="addLetter('ə'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ə</button>
+									<button onclick="addLetter('ə́'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">ə́</button>
+									<button onclick="addLetter('’'); searchTable()" style="font-size:1.1em; margin-left:1%; margin-bottom:1.0em;">’</button>
+									<button onclick="copyToClipboard()" style="color:#009EF8; font-size:1.1em; margin-left:1%; margin-bottom:1.0em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+
+									</div>
+									
+
+									<table id="myTable">
+										<tr class="header">
+											<th onclick="sortTable(0)"><strong>Nisenan</strong></th>
+											<th><strong> </strong></th>
+											<th onclick="sortTable(1)"><strong>English</strong></th>
+											<th><strong> </strong></th>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Bomeyyu 1</span>Bomeyyú 1<span id="001" style="display: none;">Bomeyyú 1</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - classroom one - bomeyyú wíttee - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#classroom_1">Classroom 1</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('001')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Bomeyyu 2</span>Bomeyyú 2<span id="002" style="display: none;">Bomeyyú 2</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - classroom two - bomeyyú peen - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#classroom_2">Classroom 2</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('002')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Kilemise</span>Kɨlémɨsé<span id="003" style="display: none;">Kɨlémɨsé</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - women - kɨlémɨsé - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#women">Women</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('003')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Kuyee</span>Kuyée<span id="004" style="display: none;">Kuyée</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - round tule - kuyée - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#round_tule">Round Tule</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('004')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Lolmen</span>Lólmen<span id="005" style="display: none;">Lólmen</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - [month name] - lólmen - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#lolmen">[month name]</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('005')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Makkityu</span>Makkityú<span id="006" style="display: none;">Makkityú</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - courthouse - makkityú - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#courthouse">Courthouse</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('006')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Maydikmise</span>Máydɨkmɨsé<span id="007" style="display: none;">Máydɨkmɨsé</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - men - máydɨkmɨsé - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#men">Men</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('007')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Mom</span>Mom<span id="008" style="display: none;">Mom</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - water - mom - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#water">Water</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('008')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Okomen</span>Okomén<span id="009" style="display: none;">Okomén</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - summer - okomén - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#summer">Summer</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('009')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Tamas</span>Tamás<span id="010" style="display: none;">Tamás</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - winter - tamás - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#winter">Winter</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('010')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Topmen</span>Topmén<span id="011" style="display: none;">Topmén</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - fall - topmén - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#fall">Fall (season)</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('011')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Tuulemise</span>Tuulémɨsé<span id="012" style="display: none;">Tuulémɨsé</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - relatives, family - tuulémɨsé - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#family">Family</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('012')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Uuti</span>Uutí<span id="013" style="display: none;">Uutí</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - acorn - uutí - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#acorn">Acorn</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('013')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Waase</span>Waasé<span id="014" style="display: none;">Waasé</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - obsidian - waasé - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#obsidian">Obsidian</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('014')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Woololok</span>Woololók<span id="015" style="display: none;">Woololók</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - northern flicker - woololók - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#flickerbird">Flickerbird</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('015')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="vertical-align:middle;"><span style="display: none;">Yoomen</span>Yoomén<span id="016" style="display: none;">Yoomén</span>
+											</td>
+											<td>
+												<div class="mediPlayer">
+													<audio class="listen" preload="none" data-size="50" src="building/sounds/N - spring - yoomén - Combo.wav"></audio>
+												</div>
+											</td>
+											<td style="vertical-align:middle;"><a href="#spring">Spring (season)</a></td>
+											<td style="vertical-align:middle;">
+												<button onclick="copy_to_clipboard('016')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+									</table>
+
+									</div>
+
+
+
+
+									<div class="mobile-only" style="max-height:30em; overflow:auto; margin-bottom:3em;">
+
+									<div id="NisenanInputMobile" style="position:sticky; top:0px; z-index:10; background-color:#fff;; text-align:center;">
+
+									<input type="text" id="myInput_m" onkeyup="searchTable_m()" placeholder="Search by Nisenan, English, or Latin name..." style="margin-top:2em; width:75%;">
+									<button onclick="copyToClipboard_m()" style="color:#009EF8; font-size:1.1em; margin-left:1%; margin-bottom:1.0em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+
+									<div style="text-align:center;">
+										<button onclick="addLetter_m('á'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">á</button>
+										<button onclick="addLetter_m('é'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">é</button>
+										<button onclick="addLetter_m('í'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">í</button>
+										<button onclick="addLetter_m('ó'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ó</button>
+										<button onclick="addLetter_m('ú'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ú</button>
+										<button onclick="addLetter_m('ɨ'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ɨ</button>
+										<button onclick="addLetter_m('ɨ́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ɨ́</button>
+										<button onclick="addLetter_m('ə'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ə</button>
+										<button onclick="addLetter_m('ə́'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">ə́</button>
+										<button onclick="addLetter_m('’'); searchTable_m()" style="font-size:1.1em; margin-left:1%; margin-bottom:0.5em;">’</button>
+									</div>
+
+									</div>
+
+									<div style="overflow-x:auto; max-width:100%;">
+
+									<table id="myTable_m" style="margin-top:30px;">
+										<tr class="header">
+											<th style="text-align:center;" onclick="sortTable_m(0)"><strong>Nisenan</strong></th>
+											<th><strong> </strong></th>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Bomeyyu 1</span>Bomeyyú 1<span id="001a" style="display: none;">Bomeyyú 1</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#classroom_1">Classroom 1</a></p>
+												<audio preload="metadata" id="a_001a" src="building/sounds/N - classroom one - bomeyyú wíttee - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_001a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('001a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Bomeyyu 2</span>Bomeyyú 2<span id="002a" style="display: none;">Bomeyyú 2</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#classroom_2">Classroom 2</a></p>
+												<audio preload="metadata" id="a_002a" src="building/sounds/N - classroom two - bomeyyú peen - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_002a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('002a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Kilemise</span>Kɨlémɨsé<span id="003a" style="display: none;">Kɨlémɨsé</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#women">Women</a></p>
+												<audio preload="metadata" id="a_003a" src="building/sounds/N - women - kɨlémɨsé - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_003a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('003a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Kuyee</span>Kuyée<span id="004a" style="display: none;">Kuyée</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#round_tule">Round Tule</a></p>
+												<audio preload="metadata" id="a_004a" src="building/sounds/N - round tule - kuyée - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_004a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('004a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Lolmen</span>Lólmen<span id="005a" style="display: none;">Lólmen</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#lolmen">[month name]</a></p>
+												<audio preload="metadata" id="a_005a" src="building/sounds/N - [month name] - lólmen - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_005a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('005a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Makkityu</span>Makkityú<span id="006a" style="display: none;">Makkityú</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#courthouse">Courthouse</a></p>
+												<audio preload="metadata" id="a_006a" src="building/sounds/N - courthouse - makkityú - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_006a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('006a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Maydikmise</span>Máydɨkmɨsé<span id="007a" style="display: none;">Máydɨkmɨsé</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#men">Men</a></p>
+												<audio preload="metadata" id="a_007a" src="building/sounds/N - men - máydɨkmɨsé - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_007a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('007a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Mom</span>Mom<span id="008a" style="display: none;">Mom</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#water">Water</a></p>
+												<audio preload="metadata" id="a_008a" src="building/sounds/N - water - mom - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_008a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('008a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Okomen</span>Okomén<span id="009a" style="display: none;">Okomén</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#summer">Summer</a></p>
+												<audio preload="metadata" id="a_009a" src="building/sounds/N - summer - okomén - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_009a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('009a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Tamas</span>Tamás<span id="010a" style="display: none;">Tamás</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#winter">Winter</a></p>
+												<audio preload="metadata" id="a_010a" src="building/sounds/N - winter - tamás - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_010a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('010a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Topmen</span>Topmén<span id="011a" style="display: none;">Topmén</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#fall">Fall (season)</a></p>
+												<audio preload="metadata" id="a_011a" src="building/sounds/N - fall - topmén - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_011a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('011a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Tuulemise</span>Tuulémɨsé<span id="012a" style="display: none;">Tuulémɨsé</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#family">Family</a></p>
+												<audio preload="metadata" id="a_012a" src="building/sounds/N - relatives, family - tuulémɨsé - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_012a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('012a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Uuti</span>Uutí<span id="013a" style="display: none;">Uutí</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#acorn">Acorn</a></p>
+												<audio preload="metadata" id="a_013a" src="building/sounds/N - acorn - uutí - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_013a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('013a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Waase</span>Waasé<span id="014a" style="display: none;">Waasé</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#obsidian">Obsidian</a></p>
+												<audio preload="metadata" id="a_014a" src="building/sounds/N - obsidian - waasé - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_014a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('014a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Woololok</span>Woololók<span id="015a" style="display: none;">Woololók</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#flickerbird">Flickerbird</a></p>
+												<audio preload="metadata" id="a_015a" src="building/sounds/N - northern flicker - woololók - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_015a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('015a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center;">
+												<p style="margin-bottom:1.0em"><span style="display: none;">Yoomen</span>Yoomén<span id="016a" style="display: none;">Yoomén</span>
+												</p>
+												<p style="margin-bottom:1.5em; font-size:0.9em;"><a href="#spring">Spring (season)</a></p>
+												<audio preload="metadata" id="a_016a" src="building/sounds/N - spring - yoomén - Combo.wav"></audio>
+												<button onclick="playPauseAudio('a_016a')" class="audioButton" style="margin-bottom:1.0em;"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+											</td>
+											<td>
+												<button onclick="copy_to_clipboard('016a')" style="color:#009EF8; font-size:1.2em;"><i class="fa-regular fa-copy" title="copy text"></i></button>
+											</td>
+										</tr>
+									</table>
+
+									</div>
+
+									</div>
+
+
+
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			<!-- Secondary -->
+				<div id="secondary">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2>Restroom signs</h2>
+									
+									
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			<!-- Tertiary -->
+				<div id="tertiary">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2>Do you want to know more?</h2>
+									<p><strong>About the project:</strong> This website and the associated plant signage were created by staff in the Language and Environmental Departments and our Summer 2025 Youth Interns, Leon Valadez and Angel Bryant, to share information about plants found on the Shingle Springs Rancheria.</p>
+									<p>The information about plants that you will find on this site comes from a variety of sources, including plant guides created by the Environmental and Traditional Ecological Knowlege (TEK) Departments, the book "California Indians and their environment" by Lightfoot & Parrish (<a href="https://www.amazon.com/California-Indians-Their-Environment-Introduction/dp/0520256905" target="_blank">2009</a>), and other sources about Nisenan lifeways like the book "The Valley Nisenan" by Kroeber (<a href="https://digitalassets.lib.berkeley.edu/anthpubs/ucb/text/ucp024-005.pdf" target="_blank">1929</a>) and "Ethnology of the Nisenan" by Beals (<a href="https://digitalassets.lib.berkeley.edu/anthpubs/ucb/text/ucp031-007.pdf" target="_blank">1933</a>).</p>
+
+
+
+									<p style="margin-top:3em;"><strong>About the language:</strong> The SSBMI Community has ancestral ties to the Valley & Southern Hill dialects of Nisenan through the Tribe's Matriarchs, <strong>Pamela Cleanso Adams</strong> and <strong>Annie Hill Murray Paris</strong>. Pamela spoke the Valley dialect and she, her brother Tom Cleanso, and her daughter Lillie Williams are responsible for passing on most of the knowledge we have of Valley Nisenan today. We have less direct information about Annie’s language; based on where she was from and documented language from her relations and associates, she likely spoke Southern Hill Nisenan.</p>
+									<p>The Nisenan language that we share is mainly from speakers of the Valley dialect like SSBMI Matriarch Pamela Cleanso Adams and her brother Tom Cleanso as well as speakers of the Southern Hill dialect like William Joseph, Ida Hill Starkey, and Charlie Hunchup. Valley and Southern Hill Nisenan are very similar to one another in their words and grammar; we note any differences between these dialects on this website.</p>
+									<p>Unless noted, all audio recordings are of Language Department staff. We are learners of the language and hope you will join us in learning too.</p>
+
+
+
+									<p style="margin-top:3em;"><strong>Questions?</strong> Please contact the Language Department at: <a href="mailto: Language@ssband.org">Language@ssband.org</a> or the Environmental Department at <a href="mailto: mrtayaba@ssband.org">mrtayaba@ssband.org</a>.</p>
+
+
+
+
+
+									<p style="margin-top:3em;text-align:right;">Webpage last updated: 2026-02-27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+			<div id="footer_content"></div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+			<script src="https://code.jquery.com/jquery.min.js"></script>
+			<script src="../assets/js/player.js"></script>
+
+			<script>
+				$(document).ready(function () {
+					$('.mediPlayer').mediaPlayer();
+				});
+			</script>
+
+	</body>
+</html>
