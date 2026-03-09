@@ -2335,7 +2335,19 @@ input, select, textarea {
 
 
 
-#myInput, #myInput_m, #myInput_Miw, #myInput_Miw_m {
+#myInput, #myInput_m, #myInput2, #myInput2_m, #myInput_Miw, #myInput_Miw_m {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 94%; /* Partial width */
+  margin-left: 3%;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myKeyboard_nis_desk, #myKeyboard_nis_mob, #myKeyboard_miw_desk, #myKeyboard_miw_mob {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
