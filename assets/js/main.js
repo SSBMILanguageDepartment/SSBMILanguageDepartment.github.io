@@ -84,6 +84,21 @@ function copy_to_clipboard( elm_id ) {
 
 
 
+
+
+// NEW --- FUNCTION FOR COPYING TEXT FROM INPUT FIELD TO CLIPBOARD
+
+function copyToClipboard2(myInput) {
+  // Get the input field element
+  var copyText = document.getElementById(myInput);
+
+  // Select the text in the input field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  navigator.clipboard.writeText(copyText.value)
+}
+
 // FUNCTION FOR COPYING TEXT FROM INPUT FIELD TO CLIPBOARD
 
 function copyToClipboard() {
@@ -140,6 +155,14 @@ function copyToClipboard_Miw_m() {
 
 
 
+
+// NEW --- FUNCTION FOR CHARACTER PICKER
+
+function addLetter2(letter, myInput) {
+	const inputField = document.getElementById(myInput);
+	inputField.value += letter;
+}
+
 // FUNCTION FOR CHARACTER PICKER
 
 function addLetter(letter) {
@@ -171,6 +194,26 @@ function addLetter_Miw_m(letter) {
 
 
 
+
+// NEW --- FUNCTION FOR SEARCHING TABLE
+
+function searchTable2(myInput, myTable) {
+	// Declare variables
+	var input, filter, table, tr, td1, td2, i, txtValue;
+	input = document.getElementById(myInput);
+	filter = input.value.toUpperCase();
+	table = document.getElementById(myTable);
+	tr = table.getElementsByTagName("tr");
+
+	// Loop through all table rows, and hide those who don't match the search query
+	for (i = 1; i < tr.length; i++) {
+		if (tr[i].textContent.toUpperCase().indexOf(filter) > -1) {
+			tr[i].style.display = "";
+		} else {
+			tr[i].style.display = "none";
+		}      
+	}
+}
 
 // FUNCTION FOR SEARCHING TABLE
 
@@ -725,4 +768,22 @@ function openLanguage_m(evt, languageName_m) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(languageName_m).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+
+
+
+
+
+// FUNCTION FOR SEARCHING WEBSITE VIA GOOGLE 
+function searchGoogle(query) {
+
+  // Encode the query to handle spaces and special characters correctly
+  const encodedQuery = encodeURIComponent(query);
+  
+  // Construct the Google search URL
+  const googleSearchUrl = 'https://www.google.com/search?q=site%3Ahttps%3A%2F%2Fssbmilanguagedepartment.github.io/+'+encodedQuery;
+  
+  // Redirect the browser to the search results page
+  window.location.href = googleSearchUrl;
 }
