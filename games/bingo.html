@@ -22,13 +22,42 @@
 				$("#footer_content").load("../assets/footer.html");
 			});
 		</script>
+		<link rel="stylesheet" href="../../assets/css/progres-bar.css" />
+		<style>
+			.mobile-only {
+				display: none;
+			}
+			.desktop-only {
+				display: none;
+			}
+
+			@media (max-width: 768px) {
+				.mobile-only {
+					display: block; /* Show mobile content on smaller screens */
+				}
+			}
+
+			@media (min-width: 769px) {
+				.desktop-only {
+					display: block; /* Show desktop content on larger screens */
+				}
+			}
+
+			.mediPlayer {
+				cursor: pointer;
+			}
+		</style>
 	</head>
 
 	<body>
 		<div id="page-wrapper">
 
 			<div id="header_content"></div>
-
+			
+			<section id="backtotop_button" style="margin: 0 0 0 0;">
+			
+			
+			
 			<!-- Main -->
 				<div id="main">
 					<div class="container">
@@ -772,9 +801,19 @@
 						</div>
 					</div>
 				</div>
-
-
-
+				
+				
+					<div class="desktop-only" id="backtotop_icon" style="position:fixed; text-align:right; bottom:10%; z-index:10; margin-left:90%;">
+						<a href="#top"><img src="../assets/resources/backtotop_icon.png" style="width:100%; max-width:100px;"></a>
+					</div>
+				
+				
+					<div class="mobile-only" id="backtotop_icon" style="position:fixed; text-align:right; bottom:5%; z-index:10; margin-left:88%;">
+						<a href="#top"><img src="../assets/resources/backtotop_icon_mobile.png" style="width:100%; max-width:60px;"></a>
+					</div>
+				
+			</section>
+			
 			<div id="footer_content"></div>
 
 		</div>
@@ -785,6 +824,15 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+
+			<script src="https://code.jquery.com/jquery.min.js"></script>
+			<script src="../assets/js/player.js"></script>
+
+			<script>
+				$(document).ready(function () {
+					$('.mediPlayer').mediaPlayer();
+				});
+			</script>
 
 	</body>
 </html>
