@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>SSBMI Language Department - 3rd Railroads in Native North America Forum</title>
+		<title>SSBMI Language Department - Folsom Zoo Language Trip</title>
 		<link rel="icon" href="../images/ssbmitriangles.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -22,12 +22,40 @@
 				$("#footer_content").load("../assets/footer.html");
 			});
 		</script>
-	</head>
+		<link rel="stylesheet" href="../assets/css/progres-bar.css" />
+		<style>
+			.mobile-only {
+				display: none;
+			}
+			.desktop-only {
+				display: none;
+			}
 
+			@media (max-width: 768px) {
+				.mobile-only {
+					display: block; /* Show mobile content on smaller screens */
+				}
+			}
+
+			@media (min-width: 769px) {
+				.desktop-only {
+					display: block; /* Show desktop content on larger screens */
+				}
+			}
+
+			.mediPlayer {
+				cursor: pointer;
+			}
+		</style>
+	</head>
 	<body>
 		<div id="page-wrapper">
 
 			<div id="header_content"></div>
+			
+			<section id="backtotop_button" style="margin: 0 0 0 0;">
+			
+			
 
 			<!-- Main -->
 				<div id="main">
@@ -36,7 +64,111 @@
 							<div class="col-12">
 
 								<section>
-									<h2 style="font-size:2em;">This webpage is under construction.</h2>
+									<h2 style="font-size:2em;">3rd Railroads in Native North America Forum</h2>
+									
+									<div class="row main-row">
+									<div class="col-6 col-12-medium" style="margin-bottom:1em;">
+										<div style="border: 2px solid black; padding: 15px; box-sizing: border-box; margin-top:0.5em; margin-left:0.5em; margin-right:0.5em;">
+										<h3 style="margin-top:0.5em; margin-bottom:0.5em;">Table of Contents</h3>
+										<li style="margin-left:6%; margin-bottom:1.0em;"><a href="#stickers">Stickers + Listen to the language</a></li>
+										<h3 style="margin-top:1.0em; margin-bottom:0.5em;">Do you want to know more?</h3>
+										<li style="margin-left:6%; margin-bottom:1.0em;"><a href="#aboutNisenan">About the Nisenan language</a></li>
+										<li style="margin-left:6%; margin-bottom:0.5em;"><a href="#aboutWebsite">About this website</a></li>
+										</div>
+									</div>
+									<div class="col-6 col-12-medium" style="margin-top:0.5em;">
+									<p>Séekas’in! The SSBMI Language Department created this webpage to share audio recordings of the Nisenan language found on stickers we shared at the 3rd Railroads in Native North America Forum at the California State Railroad Museum (July 10-12, 2026).</p>
+									<p>We encourage you to browse this website to learn more about the Nisenan language and the Tribe's language revitalization efforts.</p>
+									</div>
+									</div>
+
+									<p style="margin-top:2em;">Please contact us at <a href="mailto: language@ssband.org">language@ssband.org</a> to inquire about the availability of stickers or other language resources, or to ask other questions.</p>
+									
+								</section>
+								
+								
+								
+								<section>
+									<hr color=#fff id="stickers" style="margin-bottom:3em;">
+
+									<h2>Stickers + Listen to the language</h2>
+									
+									<section style="text-align:center; justify:center; margin-top:4em;">
+										
+										<img class="privateimage" src="./railroadsforum/images/sticker_railroad-ticket_web.png" style="max-height:250px;">
+									
+										<section style="text-align:center; margin-top:2em; margin-left:5%; margin-right:5%;">
+
+											<p style="margin-bottom:0.0em">Saklentá</p>
+											<p style="margin-bottom:1.0em; font-size:0.9em;">'Sacramento'</p>
+												<audio preload="metadata" controls>
+													<source src="../sounds/N - sacramento - saklentá - Combo.wav" type="audio/wav">
+												</audio>
+
+											<hr style="margin-top:2em; margin-bottom:2em; margin-left:15%; margin-right:15%;">
+
+
+
+											<p style="margin-bottom:0.0em">Nisenáaním k’awdím mi.</p>
+											<p style="margin-bottom:1.0em; font-size:0.9em;">'You are on Nisenan land.'</p>
+												<audio preload="metadata" controls>
+													<source src="../sounds/N - you are on nisenan land - nisenáaním k’awdím mi - Combo.wav" type="audio/wav">
+												</audio>
+												
+										</section>
+										
+										
+										
+										<img class="privateimage" src="./railroadsforum/images/sticker_welcome-sign_web.png" style="max-height:250px; margin-top:2em;">
+									
+										<section style="text-align:center; margin-top:2em; margin-left:5%; margin-right:5%;">
+
+											<p style="margin-bottom:0.0em">Séekas’in!</p>
+											<p style="margin-bottom:1.0em; font-size:0.9em;">'Hello!'</p>
+												<audio preload="metadata" controls>
+													<source src="../sounds/N - hello - séekas’in - Combo.wav" type="audio/wav">
+												</audio>
+
+											<hr style="margin-top:2em; margin-bottom:2em; margin-left:15%; margin-right:15%;">
+
+
+
+											<p style="margin-bottom:0.0em">Saklentá</p>
+											<p style="margin-bottom:1.0em; font-size:0.9em;">'Sacramento'</p>
+												<audio preload="metadata" controls>
+													<source src="../sounds/N - sacramento - saklentá - Combo.wav" type="audio/wav">
+												</audio>
+
+											<hr style="margin-top:2em; margin-bottom:2em; margin-left:15%; margin-right:15%;">
+
+
+
+											<p style="margin-bottom:0.0em">Nisenáaním k’awdím mi.</p>
+											<p style="margin-bottom:1.0em; font-size:0.9em;">'You are on Nisenan land.'</p>
+												<audio preload="metadata" controls>
+													<source src="../sounds/N - you are on nisenan land - nisenáaním k’awdím mi - Combo.wav" type="audio/wav">
+												</audio>
+												
+										</section>
+										
+										
+										
+										<img class="privateimage" src="./railroadsforum/images/sticker_railroad-tracks_web.png" style="max-height:300px; margin-top:2em;">
+									
+										<section style="text-align:center; margin-top:2em; margin-left:5%; margin-right:5%;">
+
+											<p style="margin-bottom:0.0em">Leeloté boo</p>
+											<p style="margin-bottom:1.0em; font-size:0.9em;">'Railroad tracks'</p>
+												<audio preload="metadata" controls>
+													<source src="../sounds/N - railroad tracks - leeloté boo - Combo.wav" type="audio/wav">
+												</audio>
+												
+										</section>
+
+										<p style="margin-top:1em; text-align:left;"><strong>Esak’ábe mi? (Do you know?)</strong> Nisenan speakers borrowed the word <strong>leelót (railroad)</strong> from the English word "railroad", adapting it to sound like a Nisenan word. For example, there are no "r" sounds in Nisenan, so the "r" sounds of the English word are replaced with "l".</p>
+									
+									</section>
+
 								</section>
 
 							</div>
@@ -46,6 +178,86 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Secondary -->
+				<div id="secondary">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+								
+									<hr color=#f6f6f4 id="aboutNisenan" style="margin-bottom:3em;">
+									
+									<h2>The Nisenan language and the SSBMI Community</h2>
+									
+									<p>Sacramento is part of the Tribe's ancestral Nisenan homelands in the Sacramento Valley. The California State Railroad Museum is located in downtown Sacramento, on land that sits between several Nisenan villages like <strong>Pusúune</strong>, <strong>Sáama</strong>, and <strong>Seek</strong>.<p>
+									
+									
+									
+									<section style="text-align:center; margin-left:5%; margin-right:5%; margin-top:2em;">
+									
+									<div class="desktop-only">
+									<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1723B1ONA9nXzPGp1iCykRO39DiLVU70&ehbc=2E312F" width="640" height="480"></iframe>
+									<p style="font-size:0.8em;">Note that the locations of all village sites on this map are approximate.</p>
+									</div>
+									<div class="mobile-only">
+									<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1723B1ONA9nXzPGp1iCykRO39DiLVU70&ehbc=2E312F" width="300" height="300"></iframe>
+									<p style="font-size:0.8em;">Note that the locations of all village sites are approximate.</p>
+									</div>
+									
+									</section>
+									
+									
+									
+									<p>The Nisenan language has been spoken in Sacramento since time immemorial, and we are proud to be able to share the language with you.</p>
+									
+									<p>The SSBMI Community has ancestral ties to the Valley and Southern Hill dialects of the Nisenan language through the Tribe's Matriarchs, <strong>Pamela Cleanso Adams</strong> and <strong>Annie Hill Murray Paris</strong>. Pamela spoke the Valley dialect and she, her brother Tom Cleanso, and her daughter Lillie Williams are responsible for passing on most of the knowledge we have of Valley Nisenan today. We have less direct information about Annie’s language; based on where she was from and documented language from her relations and associates, she likely spoke Southern Hill Nisenan.</p>
+									
+									<p>The Nisenan language that we share on our language learning materials is from speakers of the Valley dialect like SSBMI Matriarch Pamela Cleanso Adams and her brother Tom Cleanso, as well as speakers of the Southern Hill dialect including William Joseph (a.k.a. Bill Joe), Ida Hill Starkey, Charlie Hunchup, and Amanda Winn. Valley and Southern Hill Nisenan are very similar to one another in their words and grammar, and they are more similar to one another than either one is to the other dialects of the language (i.e. Central Hill and Northern Hill Nisenan).</p>
+									
+									<p>You can learn more about the Nisenan language, its dialects, and the Tribe's language background by reading our <a href="../resources/Language_info.pdf" target="_blank">"Language FAQ" pamphlet</a>.</p>
+									
+									
+									
+									
+									
+									<hr color=#f6f6f4 id="aboutWebsite" style="margin-bottom:3em;">
+									
+									<p style="margin-top:3em;"><strong>About the website:</strong> The SSBMI Language Department maintains this website to share language learning resources with the SSBMI Community. We encourage you to check out the rest of this website to find other learning resources which you can use at home. For example, we also share printable language flashcards, coloring pages, kid-friendly games like "Go Fish!" and "Snakes and Ladders", and other resources.</p>
+									<p>If you have questions about the Nisenan language or about the availability of our resources, you can reach out to us at <a href="mailto: Language@ssband.org">Language@ssband.org</a>.</p>
+
+									<p style="margin-top:3em;">Webpage last updated: 2026-06-09</p>
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+					<div class="desktop-only" id="backtotop_icon" style="position:fixed; text-align:right; bottom:10%; z-index:10; margin-left:90%;">
+						<a href="#top"><img src="../assets/resources/backtotop_icon.png" style="width:100%; max-width:100px;"></a>
+					</div>
+				
+				
+					<div class="mobile-only" id="backtotop_icon" style="position:fixed; text-align:right; bottom:5%; z-index:10; margin-left:88%;">
+						<a href="#top"><img src="../assets/resources/backtotop_icon_mobile.png" style="width:100%; max-width:60px;"></a>
+					</div>
+				
+			</section>
+			
 			<div id="footer_content"></div>
 
 		</div>
@@ -56,6 +268,23 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+
+			<script src="https://code.jquery.com/jquery.min.js"></script>
+			<script src="../assets/js/player.js"></script>
+
+			<script>
+				$(document).ready(function () {
+					$('.mediPlayer').mediaPlayer();
+				});
+			</script>
+
+			<script>
+				if (window.innerWidth > 768) {
+					document.getElementById("defaultOpen").click();
+				} else {
+					document.getElementById("defaultOpenMobile").click();
+				}
+			</script>
 
 	</body>
 </html>
