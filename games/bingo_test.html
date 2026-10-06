@@ -276,10 +276,32 @@
 									<p id="Animals"></p>
 									<p id="Spooky-Bingo"></p>
 									
+									
+									
+									<!-- Desktop tabs go here -->
+									
+									<div class="desktop-only">
+									
 									<!-- Vocab Tab Buttons will go here -->
-									<div id="vocabTabs" class="tab" style="position:sticky; top:0; z-index:10;">
+									<div id="vocabTabs_d" class="tab" style="position:sticky; top:0; z-index:10;">
 										<button class="tablinks" onclick="openTab(event, 'Animals_v')"><a href="#Animals" style="padding:100px 10px; margin:-10px; color:#000000; text-decoration:none;">Animals</a></button>
 										<button class="tablinks" onclick="openTab(event, 'SpookyBingo_v')" id="defaultOpen"><a href="#Spooky-Bingo" style="padding:100px 10px; margin:-10px; color:#000000; text-decoration:none;">Spooky Bingo</a></button>
+									</div>
+									
+									</div>
+									
+									
+									
+									<!-- Mobile tabs go here -->
+									
+									<div class="mobile-only">
+									
+									<!-- Vocab Tab Buttons will go here -->
+									<div id="vocabTabs_m" class="tab" style="position:sticky; top:0; z-index:10; font-size:0.9em;">
+										<button class="tablinks" onclick="openTab_m(event, 'Animals_v')"><a href="#Animals" style="color:#000000; text-decoration:none;">Animals</a></button>
+										<button class="tablinks" onclick="openTab_m(event, 'SpookyBingo_v')" id="defaultOpenMobile"><a href="#Spooky-Bingo" style="color:#000000; text-decoration:none;">Spooky Bingo</a></button>
+									</div>
+									
 									</div>
 
 
@@ -1371,7 +1393,11 @@
 			</script>
 
 			<script>
-				document.getElementById("defaultOpen").click();
+				if (window.innerWidth > 768) {
+					document.getElementById("defaultOpen").click();
+				} else {
+					document.getElementById("defaultOpenMobile").click();
+				}
 			</script>
 
 	</body>
