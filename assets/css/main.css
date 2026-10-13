@@ -2385,6 +2385,84 @@ input, select, textarea {
 
 
 
+/* Table stuff for special color tables */
+#myInput-color-nisenan_d, #myInput-color-nisenan_m, #myInput-color-miwok_d, #myInput-color-miwok_m {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 94%; /* Partial width */
+  margin-left: 3%;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable-color-nisenan_d, #myTable-color-nisenan_m, #myTable-color-miwok_d, #myTable-color-miwok_m {
+  border-collapse: collapse; /* Collapse borders */
+  width: 94%; /* Partial width */
+  margin-left: 3%;
+  margin-bottom: 3em;
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable-color-nisenan_d th, #myTable-color-nisenan_d td, #myTable-color-nisenan_m th, #myTable-color-nisenan_m td, #myTable-color-miwok_d th, #myTable-color-miwok_d td, #myTable-color-miwok_m th, #myTable-color-miwok_m td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable-color-nisenan_d tr, #myTable-color-nisenan_m tr, #myTable-color-miwok_d tr, #myTable-color-miwok_m tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable-color-nisenan_d tr.header, #myTable-color-nisenan_d tr:hover, #myTable-color-nisenan_m tr.header, #myTable-color-nisenan_m tr:hover, #myTable-color-miwok_d tr.header, #myTable-color-miwok_d tr:hover, #myTable-color-miwok_m tr.header, #myTable-color-miwok_m tr:hover, {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+
+
+/* Table stuff for special phrase tables */
+#myInput-phrase-nisenan_d, #myInput-phrase-nisenan_m, #myInput-phrase-miwok_d, #myInput-phrase-miwok_m {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 94%; /* Partial width */
+  margin-left: 3%;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable-phrase-nisenan_d, #myTable-phrase-nisenan_m, #myTable-phrase-miwok_d, #myTable-phrase-miwok_m {
+  border-collapse: collapse; /* Collapse borders */
+  width: 94%; /* Partial width */
+  margin-left: 3%;
+  margin-bottom: 3em;
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable-phrase-nisenan_d th, #myTable-phrase-nisenan_d td, #myTable-phrase-nisenan_m th, #myTable-phrase-nisenan_m td, #myTable-phrase-miwok_d th, #myTable-phrase-miwok_d td, #myTable-phrase-miwok_m th, #myTable-phrase-miwok_m td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable-phrase-nisenan_d tr, #myTable-phrase-nisenan_m tr, #myTable-phrase-miwok_d tr, #myTable-phrase-miwok_m tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable-phrase-nisenan_d tr.header, #myTable-phrase-nisenan_d tr:hover, #myTable-phrase-nisenan_m tr.header, #myTable-phrase-nisenan_m tr:hover, #myTable-phrase-miwok_d tr.header, #myTable-phrase-miwok_d tr:hover, #myTable-phrase-miwok_m tr.header, #myTable-phrase-miwok_m tr:hover, {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+
+
 
 
 
@@ -2473,6 +2551,22 @@ input, select, textarea {
 
 /* Style the tab content */
 .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the tab2 content */
+.tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the tab3 content */
+.tabcontent3 {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
