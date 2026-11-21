@@ -2572,3 +2572,42 @@ input, select, textarea {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fff;
+  font-size: 1.0em;
+  font-family: 'Andika', sans-serif;
+  color: #51574f;
+  cursor: pointer;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  display: none;
+  border: none;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  margin-top: 0em;
+  margin-bottom: 2em;
+}
