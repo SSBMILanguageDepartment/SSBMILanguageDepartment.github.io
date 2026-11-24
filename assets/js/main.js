@@ -831,6 +831,31 @@ function openTab3(evt, tabName) {
 
 
 
+// FUNCTION FOR REGULAR TABS 4
+
+function openTab4(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent4, tablinks4;
+
+  // Get all elements with class="tabcontent4" and hide them
+  tabcontent4 = document.getElementsByClassName("tabcontent4");
+  for (i = 0; i < tabcontent4.length; i++) {
+    tabcontent4[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks4" and remove the class "active"
+  tablinks4 = document.getElementsByClassName("tablinks4");
+  for (i = 0; i < tablinks4.length; i++) {
+    tablinks4[i].className = tablinks4[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
 // FUNCTION FOR LANGUAGE TABS [[FOR MOBILE]] 2
 
 function openTab2_m(evt, tabName_m) {
@@ -872,6 +897,31 @@ function openTab3_m(evt, tabName_m) {
   tablinks3 = document.getElementsByClassName("tablinks3");
   for (i = 0; i < tablinks3.length; i++) {
     tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName_m).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+// FUNCTION FOR LANGUAGE TABS [[FOR MOBILE]] 4
+
+function openTab4_m(evt, tabName_m) {
+  // Declare all variables
+  var i, tabcontent4, tablinks4;
+
+  // Get all elements with class="tabcontent4" and hide them
+  tabcontent4 = document.getElementsByClassName("tabcontent4");
+  for (i = 0; i < tabcontent4.length; i++) {
+    tabcontent4[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks4" and remove the class "active"
+  tablinks4 = document.getElementsByClassName("tablinks4");
+  for (i = 0; i < tablinks4.length; i++) {
+    tablinks4[i].className = tablinks4[i].className.replace(" active", "");
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
